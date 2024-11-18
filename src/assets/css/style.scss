@@ -1,0 +1,335 @@
+/*
+@File: Adlash Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Customize Bootstrap CSS
+:root {
+    --transition: .5s;
+    --bs-body-bg: #ffffff;
+    --bs-body-font-size: 14px;
+    --bs-body-color: #2b2a3f;
+    --splash-body-bg: #f2f1f9;
+    --splash-info-color: #1FB1E6;
+    --splash-gray-color: #F8F8FA;
+    --splash-white-color: #ffffff;
+    --splash-black-color: #2b2a3f;
+    --splash-muted-color: #8e8da1;
+    --splash-danger-color: #EF2929;
+    --splash-orange-color: #F1421B;
+    --splash-primary-color: #6560F0;
+    --splash-success-color: #06b48a;
+    --splash-warning-color: #F3C44C;
+    --splash-emphasis-color: #a2a1bb;
+    --splash-tertiary-color: #9998B4;
+    --splash-secondary-color: #8e8da2;
+    --splash-paragraph-color: #79788e;
+    --splash-info-light-color: #6FD3F7;
+    --splash-warning-light-color: #EF7C29;
+    --splash-dark-emphasis-color: #9C9AB6;
+    --splash-black-emphasis-color: #4c4a68;
+    --splash-primary-active-color: #726eed;
+    --splash-danger-emphasis-color: #d4623a;
+    --splash-primary-emphasis-color: #59CBB7;
+    --bs-font-sans-serif: 'Red Hat Display', sans-serif;
+}
+:focus {
+    outline: 0 !important;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.transition {
+    transition: var(--transition) !important;
+}
+ol, ul {
+    li {
+        &:first-child {
+            margin-left: 0 !important;
+        }
+        &:last-child {
+            margin-right: 0 !important;
+        }
+    }
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-body-color);
+}
+
+@import "./shortcode/customize-bootstrap";
+
+// Main Content CSS
+.main-content {
+    min-height: 100vh;
+    padding: {
+        left: 275px;
+        right: 25px;
+        top: 125px;
+    };
+}
+.sidebar-hide {
+    .main-content {
+        padding-left: 85px;
+    }
+}
+
+// Prism Code Viewer CSS
+pre {
+    &[class*=language-] {
+        max-height: 430px;
+        
+        &::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+        &::-webkit-scrollbar:vertical {
+            width: 5px;
+        }
+        &::-webkit-scrollbar:horizontal {
+            height: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            border: 2px solid var(--whiteColor);
+            background-color: rgba(0, 0, 0, .2);
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;  
+            background-color: var(--whiteColor);
+        }
+    }
+}
+.token {
+    &.punctuation {
+      color: #999 !important;
+    }
+    &.tag {
+      color: #905 !important;
+    }
+    &.attr-name {
+      color: #690 !important;
+    }
+    &.attr-value {
+      color: #07a !important;
+    }
+}
+pre[class*="language-"] {
+font-size: 1em;
+}
+code[class*="language-"] {
+color: #000 !important;
+}
+
+// Quill Editor
+.ql-toolbar {
+    &.ql-snow {
+        border-color: #dedee4;
+        font-family: var(--bs-body-font-family);
+
+        button, .ql-picker-label {
+            &:hover, &:focus, &.ql-active {
+                color: var(--splash-primary-color);
+
+                .ql-stroke {
+                    stroke: var(--splash-primary-color);
+                }
+            }
+        }
+    }
+}
+.ql-editor {
+    text-align: start;
+
+    &.ql-blank {
+        &::before {
+            color: var(--splash-secondary-color);
+            font: {
+                size: 14px;
+                style: normal;
+            };
+        }
+    }
+}
+.ql-container {
+    font-family: var(--bs-body-font-family);
+    min-height: 120px;
+    height: auto;
+    &.ql-snow {
+        border-color: #dedee4;
+    }
+}
+
+// Dark Mode
+.dark {
+    color: var(--splash-white-color) !important;
+
+    button {
+        color: var(--splash-white-color);
+    }
+
+    .table > :not(caption) > * > * {
+        background-color: initial;
+    }
+}
+
+// Components CSS
+@import "./components/table";
+@import "./components/badge";
+@import "./components/buttons";
+@import "./components/forms";
+@import "./components/accordion";
+@import "./components/tabs";
+@import "./components/progress";
+@import "./components/dropdown";
+@import "./components/breadcrumb";
+@import "./components/modal";
+@import "./components/card";
+@import "./components/pagination";
+@import "./components/list-group";
+@import "./components/nav-tabs";
+@import "./components/tooltip";
+@import "./components/timeline";
+@import "./components/toast";
+@import "./components/tree";
+
+// Shortcode CSS
+@import "./shortcode/helper";
+@import "./shortcode/header";
+@import "./shortcode/sidebar";
+@import "./shortcode/ecommerce-dashboard";
+@import "./shortcode/project-management-dashboard";
+@import "./shortcode/support-desk-dashboard";
+@import "./shortcode/lms-courses-dashboard";
+@import "./shortcode/crm-system-dashboard";
+@import "./shortcode/chart";
+@import "./shortcode/calendar";
+@import "./shortcode/chat";
+@import "./shortcode/leads";
+@import "./shortcode/lead-details";
+@import "./shortcode/emails";
+@import "./shortcode/read-email";
+@import "./shortcode/products";
+@import "./shortcode/add-product";
+@import "./shortcode/product-details";
+@import "./shortcode/sellers";
+@import "./shortcode/order-details";
+@import "./shortcode/cart";
+@import "./shortcode/checkout";
+@import "./shortcode/reviews";
+@import "./shortcode/reviews";
+@import "./shortcode/order-tracking";
+@import "./shortcode/invoice-details";
+@import "./shortcode/contacts";
+@import "./shortcode/projects";
+@import "./shortcode/project-details";
+@import "./shortcode/projects-teams";
+@import "./shortcode/create-new-project";
+@import "./shortcode/ticket-preview";
+@import "./shortcode/kanban";
+@import "./shortcode/events";
+@import "./shortcode/event-details";
+@import "./shortcode/profile-settings";
+@import "./shortcode/starter";
+@import "./shortcode/authentication";
+@import "./shortcode/add-user";
+@import "./shortcode/pricing";
+@import "./shortcode/faq";
+@import "./shortcode/error";
+@import "./shortcode/maintenance";
+@import "./shortcode/social-timeline";
+@import "./shortcode/settings";
+@import "./shortcode/courses";
+@import "./shortcode/course-details";
+@import "./shortcode/edit-course";
+@import "./shortcode/search-result";
+@import "./shortcode/maps";
+@import "./shortcode/terms-conditions";
+@import "./shortcode/privacy-policy";
+@import "./shortcode/footer";
+
+// Responsive CSS
+@media only screen and (max-width : 767px) {
+
+    // Main Content CSS
+    .main-content {
+        padding: {
+            top: 160px;
+            left: 15px;
+            right: 15px;
+        };
+    }
+    .sidebar-hide {
+        .main-content {
+            padding-left: 15px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Main Content CSS
+    .main-content {
+        padding: {
+            top: 125px;
+            left: 25px;
+            right: 25px;
+        };
+    }
+    .sidebar-hide {
+        .main-content {
+            padding-left: 25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Main Content CSS
+    .main-content {
+        padding: {
+            top: 125px;
+            left: 25px;
+            right: 25px;
+        };
+    }
+    .sidebar-hide {
+        .main-content {
+            padding-left: 25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+@media only screen and (min-width: 1600px) {
+
+    // Main Content CSS
+    .main-content {
+        padding: {
+            left: 320px;
+            right: 40px;
+        };
+    }
+    .sidebar-hide {
+        .main-content {
+            padding-left: 100px;
+        }
+    }
+
+}

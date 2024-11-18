@@ -1,0 +1,716 @@
+.emails-sidebar-box {
+    .search-box {
+        .form-control {
+            background: #F5F4FA;
+            padding: {
+                top: 14px;
+                bottom: 14px;
+            };
+        }
+        button {
+            top: 50%;
+            right: 20px;
+            line-height: 1;
+            margin-top: 1px;
+            font-size: 17px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+    }
+    .list {
+        li {
+            border-bottom: 1px dashed #d9e9ef;
+            padding: {
+                top: 5px;
+                bottom: 5px;
+            };
+            a {
+                position: relative;
+                z-index: 1;
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .title {
+                    position: relative;
+                    padding-left: 30px;
+
+                    i {
+                        left: 0;
+                        top: 50%;
+                        line-height: 1;
+                        font-size: 18px;
+                        color: #79788E;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
+                .dot-badge {
+                    top: 50%;
+                    right: 0;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &::before {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    content: '';
+                    visibility: hidden;
+                    position: absolute;
+                    background: #EFEEF9;
+                    transition: var(--transition);
+                    margin: {
+                        left: -20px;
+                        right: -20px;
+                    };
+                }
+                &:hover, &.active {
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            &:first-child {
+                border-top: 1px dashed #d9e9ef;
+            }
+        }
+    }
+}
+.emails-list-box {
+    .card-head {
+        .left {
+            .form-check {
+                .form-check-input {
+                    border-color: #BFBECA;
+    
+                    &:checked {
+                        border-color: var(--splash-primary-color);
+                    }
+                }
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+        .right {
+            .info-list {
+                li {
+                    margin: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                    button {
+                        font-size: 18px;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .emails-list {
+        .email-item {
+            border-bottom: 1px dashed #d9e9ef;
+            padding: {
+                left: 25px;
+                top: 14.9px;
+                right: 25px;
+                bottom: 14.9px;
+            };
+            .email-info {
+                .form-check {
+                    .form-check-input {
+                        border-color: #BFBECA;
+    
+                        &:checked {
+                            border-color: var(--splash-primary-color);
+                        }
+                    }
+                }
+                .badge {
+                    display: inline-block;
+                    border-radius: 30px;
+                    padding: {
+                        top: 5px;
+                        bottom: 5px;
+                    };
+                }
+            }
+            .email-title {
+                p {
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .buttons-list {
+                    margin-top: 10px;
+
+                    a {
+                        border: 1px solid #D0CFDD;
+                        padding: 5px 12px 5px 35px;
+                        border-radius: 20px;
+                        margin-right: 10px;
+
+                        i {
+                            top: 50%;
+                            left: 12px;
+                            line-height: 1;
+                            font-size: 17px;
+                            margin-top: 1px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            color: var(--splash-primary-color);
+                        }
+                        &:hover {
+                            border-color: var(--splash-primary-color);
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .info-list {
+                top: 18px;
+                z-index: 2;
+                opacity: 0;
+                right: 25px;
+                padding-left: 15px;
+                visibility: hidden;
+                position: absolute;
+                transition: var(--transition);
+                background-color: var(--splash-white-color);
+
+                li {
+                    margin: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                    button {
+                        font-size: 18px;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .time {
+                margin-left: -10px;
+            }
+            .link-btn {
+                margin-left: 85px;
+            }
+            &.bg-color {
+                z-index: 1;
+                position: relative;
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    background: #F9F9FC;
+                    margin: {
+                        top: 3px;
+                        bottom: 3px;
+                    };
+                }
+                .info-list {
+                    background: #F9F9FC;
+                }
+            }
+            &:first-child {
+                border-top: 1px dashed #d9e9ef;
+            }
+            &:hover {
+                .info-list {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+// Compose Email Modal
+.compose-email-modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 99;
+    position: fixed;
+    visibility: hidden;
+    transition: var(--transition);
+
+    .compose-email-modal-dialog {
+        right: 25px;
+        bottom: 25px;
+        width: 770px;
+        position: absolute;
+        background-color: var(--splash-white-color);
+        box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.3);
+
+        .compose-email-modal-header {
+            box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+        }
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .emails-sidebar-box {
+        .search-box {
+            .form-control {
+                background: var(--splash-black-color);
+            }
+        }
+        .list {
+            li {
+                border-bottom-color: #45445e;
+                
+                a {
+                    .title {
+                        i {
+                            color: #BCBBC7;
+                        }
+                    }
+                    &::before {
+                        background: var(--splash-black-color);
+                    }
+                }
+                &:first-child {
+                    border-top-color: #45445e;
+                }
+            }
+        }
+    }
+    .emails-list-box {
+        .card-head {
+            .left {
+                .form-check {
+                    .form-check-input {
+                        border-color: #45445e;
+        
+                        &:checked {
+                            border-color: var(--splash-primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .emails-list {
+            .email-item {
+                border-bottom-color: #45445e;
+                
+                .email-info {
+                    .form-check {
+                        .form-check-input {
+                            border-color: #45445e;
+        
+                            &:checked {
+                                border-color: var(--splash-primary-color);
+                            }
+                        }
+                    }
+                }
+                .email-title {
+                    .buttons-list {
+                        a {
+                            border-color: #45445e;
+    
+                            &:hover {
+                                border-color: var(--splash-primary-color);
+                            }
+                        }
+                    }
+                }
+                .info-list {
+                    background-color: var(--splash-black-color);
+                }
+                &.bg-color {
+                    &::before {
+                        background: #222136;
+                    }
+                    .info-list {
+                        background: #222136;
+                    }
+                }
+                &:first-child {
+                    border-top-color: #45445e;
+                }
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            background-color: var(--splash-black-color);
+            box-shadow: unset;
+
+            .compose-email-modal-header {
+                box-shadow: unset;
+                border-bottom: 1px dashed #45445e;
+            }
+        }
+    }
+
+    // Quill Editor
+    .ql-toolbar {
+        &.ql-snow {
+            border-color: #45445e;
+            color: var(--splash-white-color);
+
+            .ql-picker {
+                color: #BCBBC7;
+            }
+            .ql-stroke {
+                stroke: #BCBBC7;
+            }
+            .ql-fill {
+                stroke: #BCBBC7;
+            }
+        }
+    }
+    .ql-editor {
+        &.ql-blank {
+            &::before {
+                color: #BCBBC7;
+            }
+        }
+    }
+    .ql-container {
+        &.ql-snow {
+            border-color: #45445e;
+        }
+    }
+    
+}
+
+@media only screen and (max-width : 767px) {
+
+    .emails-sidebar-box {
+        .search-box {
+            .form-control {
+                padding: {
+                    top: 13px;
+                    bottom: 13px;
+                };
+            }
+            button {
+                right: 15px;
+                font-size: 15px;
+            }
+        }
+        .list {
+            li {
+                a {
+                    padding: {
+                        top: 12px;
+                        bottom: 12px;
+                    };
+                    .title {
+                        padding-left: 25px;
+    
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                    .dot-badge {
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                    &::before {
+                        margin: {
+                            left: -10px;
+                            right: -10px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+    .emails-list-box {
+        .card-head {
+            .right {
+                button {
+                    top: -4px !important;
+                    font-size: 18px;
+                }
+            }
+        }
+        .emails-list {
+            max-height: unset;
+            overflow-y: hidden;
+
+            .email-item {
+                padding: {
+                    top: 15px;
+                    left: 15px;
+                    right: 15px;
+                    bottom: 15px;
+                };
+                .email-info {
+                    margin-bottom: 8px;
+                }
+                .email-title {
+                    margin-bottom: 5px;
+
+                    .buttons-list {
+                        margin-top: 5px;
+    
+                        a {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .info-list {
+                    display: none;
+                }
+                .time {
+                    margin-left: 0;
+                }
+                .link-btn {
+                    margin: {
+                        left: 0;
+                        top: 45px;
+                    };
+                }
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            margin: {
+                left: 5px;
+                right: 5px;
+            };
+            .compose-email-modal-body {
+                #editor-container {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .emails-list-box {
+        .card-head {
+            .right {
+                button {
+                    top: 1px !important;
+                }
+            }
+        }
+        .emails-list {
+            .email-item {
+                padding: {
+                    left: 20px;
+                    right: 20px;
+                };
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            margin: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .emails-list-box {
+        .emails-list {
+            max-height: unset;
+            overflow-y: hidden;
+            
+            .email-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .email-info {
+                    margin-bottom: 11px;
+                }
+                .email-title {
+                    margin-bottom: 8px;
+                }
+                .info-list {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .time {
+                    margin-left: 0;
+                }
+                .link-btn {
+                    margin: {
+                        left: 0;
+                        top: 45px;
+                    };
+                }
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            width: 680px;
+
+            .compose-email-modal-body {
+                #editor-container {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .emails-list-box {
+        .emails-list {
+            .email-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .email-info {
+                    margin-bottom: 11px;
+                }
+                .email-title {
+                    margin-bottom: 6px;
+                }
+                .info-list {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .time {
+                    margin-left: 0;
+                }
+                .link-btn {
+                    margin: {
+                        left: 0;
+                        top: 45px;
+                    };
+                }
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            width: 730px;
+            
+            .compose-email-modal-body {
+                #editor-container {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .emails-list-box {
+        .emails-list {
+            .email-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .email-info {
+                    margin-bottom: 11px;
+                }
+                .email-title {
+                    margin-bottom: 6px;
+                }
+                .info-list {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .time {
+                    margin-left: 0;
+                }
+                .link-btn {
+                    margin: {
+                        left: 0;
+                        top: 45px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .emails-list-box {
+        .emails-list {
+            .email-item {
+                .email-info {
+                    .badge {
+                        margin-right: 35px;
+                    }
+                }
+                .time {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    // Compose Email Modal
+    .compose-email-modal {
+        .compose-email-modal-dialog {
+            right: 40px;
+            bottom: 40px;
+        }
+    }
+
+}

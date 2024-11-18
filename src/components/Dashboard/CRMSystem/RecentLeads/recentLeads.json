@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "user/user3.jpg",
+    "name": "J. Ronan",
+    "email": "ronanjohnny@gmail.com",
+    "class": "text-outline-success",
+    "status": "Won Lead"
+  },
+  {
+    "id": 2,
+    "image": "user/user6.jpg",
+    "name": "J. Pinkman",
+    "email": "pinky321@gmail.com",
+    "class": "text-outline-info",
+    "status": "New Lead"
+  },
+  {
+    "id": 3,
+    "image": "user/user13.jpg",
+    "name": "A. Carter",
+    "email": "angela326421@gmail.com",
+    "class": "text-outline-danger",
+    "status": "Cold Lead"
+  },
+  {
+    "id": 4,
+    "image": "user/user2.jpg",
+    "name": "V. Loper",
+    "email": "lopervic@gmail.com",
+    "class": "text-outline-success",
+    "status": "Won Lead"
+  },
+  {
+    "id": 5,
+    "image": "user/user1.jpg",
+    "name": "W. White",
+    "email": "whitespace@gmail.com",
+    "class": "text-outline-info",
+    "status": "New Lead"
+  },
+  {
+    "id": 6,
+    "image": "user/user4.jpg",
+    "name": "T. Skyler",
+    "email": "skylertina213@gmail.com",
+    "class": "text-outline-danger",
+    "status": "Cold Lead"
+  }
+]

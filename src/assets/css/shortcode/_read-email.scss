@@ -1,0 +1,185 @@
+.read-email-box {
+    .card-head {
+        .link-btn {
+            position: relative;
+            margin-right: 5px;
+            color: #787786;
+            font-size: 20px;
+            top: 1px;
+        }
+    }
+    .card-body {
+        .email-info {
+            margin-bottom: 30px;
+
+            .title {
+                padding-right: 15px;
+
+                span {
+                    span {
+                        padding: {
+                            left: 10px;
+                            right: 10px;
+                        };
+                        i {
+                            position: absolute;
+                            margin-top: 3px;
+                            left: -3px;
+                            top: 0;
+
+                            &:last-child {
+                                left: auto;
+                                right: -3px;
+                            }
+                        }
+                    }
+                }
+                .info {
+                    padding-right: 12px;
+
+                    .dropdown-toggle {
+                        top: 50%;
+                        right: -15px;
+                        font-size: 13px;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        margin: {
+                            right: -2px;
+                            top: -8px;
+                        };
+                    }
+                }
+            }
+            .info-list {
+                li {
+                    margin: {
+                        left: 5px;
+                        right: 5px;
+                    };
+                    button {
+                        font-size: 18px;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .email-details {
+            padding-left: 55px;
+
+            .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 13px;
+    
+                &:not(:first-child) {
+                    margin-top: 25px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            p {
+                margin-bottom: 15px;
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .email-buttons {
+            margin-top: 25px;
+            border-top: 1px dashed #d9e9ef;
+            padding: {
+                top: 25px;
+                left: 55px;
+            };
+            button {
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .read-email-box {
+        .card-head {
+            .link-btn {
+                color: #BCBBC7;
+            }
+        }
+        .card-body {
+            .email-buttons {
+                border-top-color: #45445e;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    .read-email-box {
+        .card-body {
+            .email-info {
+                margin-bottom: 15px;
+    
+                .title {
+                    padding-right: 0;
+    
+                    span {
+                        span {
+                            display: block;
+                            padding: {
+                                left: 0;
+                                right: 0;
+                                top: 1px;
+                            };
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .info-list {
+                    li {
+                        margin: {
+                            left: 4px;
+                            right: 4px;
+                        };
+                        button {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .email-details {
+                padding-left: 0;
+    
+                .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+                    margin-bottom: 12px;
+        
+                    &:not(:first-child) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .email-buttons {
+                margin-top: 15px;
+                padding: {
+                    top: 15px;
+                    left: 0;
+                };
+            }
+        }
+    }
+
+}

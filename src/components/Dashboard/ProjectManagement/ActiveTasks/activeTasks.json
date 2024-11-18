@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "category": "Research",
+    "bgClass": "bg-info-light",
+    "usersList": [
+      {
+        "id": 1,
+        "image": "user/user7.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user2.jpg"
+      }
+    ],
+    "title": "MVP",
+    "class": "text-info-light",
+    "percent": "20"
+  },
+  {
+    "id": 2,
+    "category": "Design",
+    "bgClass": "bg-primary",
+    "usersList": [
+      {
+        "id": 1,
+        "image": "user/user4.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user6.jpg"
+      }
+    ],
+    "title": "UI Design",
+    "class": "text-primary",
+    "percent": "60"
+  },
+  {
+    "id": 3,
+    "category": "Frontend Dev",
+    "bgClass": "bg-success",
+    "usersList": [
+      {
+        "id": 1,
+        "image": "user/user10.jpg"
+      }
+    ],
+    "title": "Web Design",
+    "class": "text-success",
+    "percent": "70"
+  },
+  {
+    "id": 4,
+    "category": "Backend Dev",
+    "bgClass": "bg-danger",
+    "usersList": [
+      {
+        "id": 1,
+        "image": "user/user11.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user5.jpg"
+      },
+      {
+        "id": 3,
+        "image": "user/user8.jpg"
+      }
+    ],
+    "title": "Node js",
+    "class": "text-danger",
+    "percent": "55"
+  },
+  {
+    "id": 5,
+    "category": "Testing",
+    "bgClass": "bg-warning",
+    "usersList": [
+      {
+        "id": 1,
+        "image": "user/user12.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user3.jpg"
+      }
+    ],
+    "title": "UI Design",
+    "class": "text-warning",
+    "percent": "45"
+  }
+]

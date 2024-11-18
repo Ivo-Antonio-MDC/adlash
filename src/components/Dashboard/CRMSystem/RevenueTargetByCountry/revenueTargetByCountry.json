@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "country": "USA",
+    "progressColor": "text-primary",
+    "progress": "52",
+    "bgColor": "bg-primary",
+    "target": "12,302"
+  },
+  {
+    "id": 2,
+    "country": "Australia",
+    "progressColor": "text-success",
+    "progress": "40",
+    "bgColor": "bg-success",
+    "target": "10,432"
+  },
+  {
+    "id": 3,
+    "country": "Canada",
+    "progressColor": "text-warning",
+    "progress": "22",
+    "bgColor": "bg-warning",
+    "target": "5,456"
+  },
+  {
+    "id": 4,
+    "country": "China",
+    "progressColor": "text-danger",
+    "progress": "15",
+    "bgColor": "bg-danger",
+    "target": "2,234"
+  }
+]

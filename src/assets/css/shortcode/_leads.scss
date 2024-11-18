@@ -1,0 +1,80 @@
+.flatpickr-calendar {
+    border-color: #d8e2ef;
+    box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.15);
+
+    .flatpickr-months {
+        background-color: #f4f4f4;
+        
+        .flatpickr-prev-month, .flatpickr-next-month {
+            padding: 0;
+            width: 30px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .flatpickr-month {
+            height: 45px;
+        }
+    }
+    .flatpickr-current-month {
+        line-height: 45px;
+        font-size: 120%;
+        height: 45px;
+        padding: 0;
+
+        .flatpickr-monthDropdown-months {
+            font-weight: 700;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+    .numInputWrapper {
+        span {
+            background: var(--splash-white-color);
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+    .flatpickr-current-month {
+        input {
+            &.cur-year {
+                font-weight: 700;
+            }
+        }
+    }
+    .flatpickr-day {
+        font-weight: 600;
+        line-height: 37px;
+
+        &.selected, &.startRange, &.endRange, &.selected.inRange, &.startRange.inRange, &.endRange.inRange, &.selected:focus, &.startRange:focus, &.endRange:focus, &.selected:hover, &.startRange:hover, &.endRange:hover, &.selected.prevMonthDay, &.startRange.prevMonthDay, &.endRange.prevMonthDay, &.selected.nextMonthDay, &.startRange.nextMonthDay, &.endRange.nextMonthDay {
+            background: var(--splash-primary-color);
+            border-color: var(--splash-primary-color);
+        }
+    }
+    span {
+        &.flatpickr-weekday {
+            color: var(--splash-black-color);
+            font: {
+                weight: 700;
+                size: 14px;
+            };
+        }
+    }
+    &.arrowTop {
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+.createNewModal {
+    .btn-close {
+        top: 20px;
+        padding: 0;
+        right: 20px;
+        border-radius: 0;
+        position: absolute;
+    }
+}

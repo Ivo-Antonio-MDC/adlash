@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "courses/course-mini3.jpg",
+    "title": "Web Development",
+    "quantity": "40"
+  },
+  {
+    "id": 2,
+    "image": "courses/course-mini4.jpg",
+    "title": "Product Design",
+    "quantity": "34"
+  },
+  {
+    "id": 3,
+    "image": "courses/course-mini5.jpg",
+    "title": "3d Modelling",
+    "quantity": "15"
+  },
+  {
+    "id": 4,
+    "image": "courses/course-mini6.jpg",
+    "title": "3d Illustration & Art Design",
+    "quantity": "76"
+  },
+  {
+    "id": 5,
+    "image": "courses/course-mini7.jpg",
+    "title": "Animation Design",
+    "quantity": "23"
+  },
+  {
+    "id": 6,
+    "image": "courses/course-mini8.jpg",
+    "title": "Backend Development",
+    "quantity": "33"
+  }
+]

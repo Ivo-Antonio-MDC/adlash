@@ -1,0 +1,28 @@
+.breadcrumb {
+    --bs-breadcrumb-divider-color: #807F9C;
+    --bs-breadcrumb-item-active-color: #807F9C;
+
+    &.style-two {
+        .breadcrumb-item+.breadcrumb-item {
+            &::before {
+                top: 1px;
+            }
+        }
+    }
+}
+.breadcrumb-item+.breadcrumb-item {
+    &::before {
+        position: relative;
+        top: -1px;
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .breadcrumb {
+        --bs-breadcrumb-divider-color: #45445e;
+        --bs-breadcrumb-item-active-color: #BCBBC7;
+    }
+    
+}

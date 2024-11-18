@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "bgClass": "",
+    "bgClassImage": "bg-primary",
+    "image": "icon/vue.png",
+    "title": "Fundamental Vue 3 JS Framework Course",
+    "shortDesc": "Solve your coding problems in this course with mentors",
+    "lessons": "45",
+    "students": "71",
+    "mins": "59"
+  },
+  {
+    "id": 2,
+    "bgClass": "bg2",
+    "bgClassImage": "bg-success",
+    "image": "icon/laravel.png",
+    "title": "Fundamental Laravel Developer",
+    "shortDesc": "Solve your coding problems in this course with mentors",
+    "lessons": "45",
+    "students": "71",
+    "mins": "59"
+  }
+]

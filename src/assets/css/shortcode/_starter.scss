@@ -1,0 +1,55 @@
+.starter-card {
+    .card-body {
+        padding: 100px;
+
+        h1 {
+            font-size: 30px;
+            max-width: 650px;
+            line-height: 1.5;
+            margin: {
+                top: 50px;
+                left: auto;
+                right: auto;
+                bottom: 25px;
+            };
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .starter-card {
+        .card-body {
+            padding: 25px 15px;
+    
+            h1 {
+                font-size: 18px;
+                max-width: 100%;
+                margin: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .starter-card {
+        .card-body {
+            padding: 50px;
+    
+            h1 {
+                font-size: 24px;
+                max-width: 600px;
+                margin: {
+                    top: 30px;
+                    bottom: 20px;
+                };
+            }
+        }
+    }
+
+}

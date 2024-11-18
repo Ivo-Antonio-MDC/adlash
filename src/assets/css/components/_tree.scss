@@ -1,0 +1,50 @@
+.tree-container {
+    .treejs {
+        .treejs-nodes {
+            margin-bottom: 0;
+            padding-left: 0;
+
+            .treejs-label {
+                margin-left: 3px;
+            }
+            .treejs-node {
+                .treejs-nodes {
+                    padding-left: 20px;
+
+                    .treejs-node {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        .treejs-node__halfchecked > .treejs-checkbox:before {
+            background-color: var(--splash-primary-color);
+            border-color: var(--splash-primary-color);
+        }
+        .treejs-node__checked > .treejs-checkbox:before {
+            background-color: var(--splash-primary-color);
+            border-color: var(--splash-primary-color);
+        }
+        .treejs-checkbox {
+            &:hover {
+                &:before {
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .tree-container {
+        .treejs {
+            .treejs-node__disabled {
+                color: rgba(255, 255, 255, 0.25);
+            }
+        }
+    }
+    .figure-caption {
+        color: var(--splash-white-color);
+    }
+}

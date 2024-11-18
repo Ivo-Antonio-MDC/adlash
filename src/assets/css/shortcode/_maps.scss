@@ -1,0 +1,11 @@
+iframe {
+    width: 100%;
+    border: none;
+    height: 400px;
+}
+#leafletjs-map-panes, #leafletjs-map-choropleth, #leafletjs-map-layers {
+    height: 500px;
+}
+.leaflet-pane {
+    z-index: 1;
+}

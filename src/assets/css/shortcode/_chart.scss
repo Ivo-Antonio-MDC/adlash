@@ -1,0 +1,131 @@
+.chart {
+    .apexcharts-tooltip {
+        &.apexcharts-theme-light {
+            box-shadow: 2px 1px 22px rgba(101, 96, 240, 0.25);
+            background: var(--splash-white-color);
+            border-radius: 2px;
+            border: none;
+
+            .apexcharts-tooltip-title {
+                background: var(--splash-white-color);
+                color: var(--splash-black-color);
+                border-bottom-color: #F5F5FB;
+                padding: 10px 15px;
+                font-weight: 700;
+            }
+        }
+        &.apexcharts-theme-dark {
+            .apexcharts-tooltip-series-group {
+                color: var(--splash-white-color);
+            }
+        }
+    }
+    .apexcharts-tooltip-series-group {
+        padding: 0 15px;
+        font-weight: 500;
+        text-align: start;
+        color: var(--splash-muted-color);
+
+        &.apexcharts-active {
+            padding-bottom: 0;
+        }
+        &:last-child {
+            padding-bottom: 5px;
+        }
+    }
+    .apexcharts-xaxistooltip {
+        box-shadow: 2px 1px 22px rgba(101, 96, 240, 0.15);
+        background: var(--splash-white-color);
+        padding: 5px 10px;
+        font-weight: 700;
+        border: none;
+
+        &::before {
+            display: none;
+        }
+    }
+    .apexcharts-xaxistooltip-bottom {
+        &::after {
+            display: none;
+        }
+    }
+    .apexcharts-pie {
+        .apexcharts-text {
+            fill: #A09FB0;
+            font: {
+                size: 12px;
+                family: var(--bs-font-sans-serif) !important;
+            };
+        }
+    }
+    &#salesByPosLocationChart {
+        margin-bottom: -70px;
+    }
+    &#websiteVisitorsChart {
+        margin: 0 0 -22px -15px;
+    }
+    #averageDailySalesChart {
+        margin: -54px 0 -30px auto;
+        max-width: 205px;
+    }
+    &#weeklySalesChart {
+        margin-bottom: -25px;
+    }
+    &#taskOverviewChart {
+        margin-bottom: -25px;
+    }
+    &#numberOfTicketsChart {
+        margin: 0 0 -30px 0;
+    }
+    &#unresolvedTicketsChart {
+        margin: 0 0 -25px 0;
+    }
+    &#averageEnrollmentRateChart {
+        margin-bottom: -20px;
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .chart {
+        .apexcharts-legend-text {
+            color: #BCBBC7 !important;
+        }
+        .apexcharts-xaxis-label {
+            color: #BCBBC7 !important;
+        }
+        .apexcharts-gridline {
+            stroke: #45445e;
+        }
+        .apexcharts-radar-series {
+            polygon, line {
+                stroke: #45445e;
+            }
+        }
+        .apexcharts-datalabel {
+            fill: #BCBBC7 !important;
+        }
+        .apexcharts-grid-borders {
+            polygon, line {
+                stroke: #45445e;
+            }
+        }
+        .apexcharts-yaxis {
+            polygon, line {
+                stroke: #45445e;
+            }
+        }
+        .apexcharts-pie-series {
+            path {
+                stroke: #34334a;
+            }
+        }
+        .apexcharts-pie {
+            line, circle {
+                stroke: #45445e;
+            }
+        }
+    }
+
+}

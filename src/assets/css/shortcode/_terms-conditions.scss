@@ -1,0 +1,47 @@
+.terms-conditions-card {
+    p {
+        margin-bottom: 15px;
+
+        strong {
+            color: var(--splash-black-color);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+    ul {
+        li {
+            margin-bottom: 12px;
+
+            strong {
+                color: var(--splash-black-color);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .terms-conditions-card {
+        p {
+            strong {
+                color: var(--splash-white-color);
+            }
+        }
+        ul {
+            li {
+                strong {
+                    color: var(--splash-white-color);
+                }
+            }
+        }
+    }
+}

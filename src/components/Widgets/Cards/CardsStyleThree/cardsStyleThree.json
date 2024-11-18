@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "class": "bg-primary",
+    "title": "Adlash Dashboard Design",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 2,
+    "class": "bg-success",
+    "title": "iPad Pro 14 - With Pencil",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 3,
+    "class": "bg-warning",
+    "title": "Clay Camera For Showcase",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 4,
+    "class": "bg-info",
+    "title": "Dashboard Design Review",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  }
+]

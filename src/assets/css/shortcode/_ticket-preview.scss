@@ -1,0 +1,267 @@
+.ticket-preview-box {
+    .card-head {
+        .buttons-list {
+            button {
+                border: 1px solid rgba(101, 96, 240, 0.3);
+                padding: 9px 35px 9px 15px;
+                margin-right: 5px;
+
+                i {
+                    top: 50%;
+                    right: 15px;
+                    line-height: 1;
+                    margin-top: 1px;
+                    color: #79788E;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &:hover {
+                    border-color: var(--splash-primary-color);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .card-body {
+        .ticket-preview-list {
+            .item {
+                border-bottom: 1px dashed #d9e9ef;
+                padding: {
+                    top: 50px;
+                    bottom: 50px;
+                };
+                p {
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .buttons-list {
+                    a {
+                        border: 1px solid #D0CFDD;
+                        padding: 5px 12px 5px 35px;
+                        border-radius: 20px;
+                        margin-right: 10px;
+
+                        i {
+                            top: 50%;
+                            left: 12px;
+                            line-height: 1;
+                            font-size: 17px;
+                            margin-top: 1px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            color: var(--splash-primary-color);
+                        }
+                        &:hover {
+                            border-color: var(--splash-primary-color);
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+                &:first-child {
+                    padding-top: 0;
+                }
+                .more-conversation {
+                    left: 50%;
+                    bottom: -20px;
+                    padding: 7px 30px;
+                    position: absolute;
+                    border-radius: 30px;
+                    border: 1px solid #E6E6FF;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+.contact-information-card {
+    .card-head {
+        padding: {
+            top: 25px;
+            left: 30px;
+            right: 30px;
+            bottom: 20px;
+        };
+    }
+    .card-body {
+        border-top: 1px dashed #d9e9ef;
+        padding: {
+            top: 25px;
+            left: 30px;
+            right: 30px;
+            bottom: 25px;
+        };
+        .info-list {
+            margin-top: 20px;
+    
+            li {
+                margin-bottom: 10px;
+                padding-left: 85px;
+    
+                span {
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .ticket-preview-box {
+        .card-body {
+            .ticket-preview-list {
+                .item {
+                    border-bottom-color: #45445e;
+                    
+                    .buttons-list {
+                        a {
+                            border-color: #45445e;
+                            
+                            &:hover {
+                                border-color: var(--splash-primary-color);
+                            }
+                        }
+                    }
+                    .more-conversation {
+                        border-color: #45445e;
+                    }
+                }
+            }
+        }
+    }
+    .contact-information-card {
+        .card-body {
+            border-top-color: #45445e;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .ticket-preview-box {
+        .card-head {
+            .buttons-list {
+                margin-top: 2px;
+
+                button {
+                    padding: 7px 30px 7px 10px;
+                    margin-right: 3px;
+                    margin: {
+                        right: 5px;
+                        top: 8px;
+                    };
+                    i {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        .card-body {
+            .ticket-preview-list {
+                .item {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                    .buttons-list {
+                        margin-bottom: -8px;
+
+                        a {
+                            margin-bottom: 8px;
+                        }
+                    }
+                    .more-conversation {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .contact-information-card {
+        .card-head {
+            padding: 15px;
+        }
+        .card-body {
+            padding: 15px;
+
+            .info-list {
+                margin-top: 15px;
+        
+                li {
+                    padding-left: 75px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .contact-information-card {
+        .card-head {
+            padding: 20px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .ticket-preview-box {
+        .card-head {
+            .buttons-list {
+                margin-top: 12px;
+
+                button {
+                    padding: 8px 35px 8px 15px;
+                }
+            }
+        }
+    }
+    .contact-information-card {
+        .card-head {
+            padding: {
+                top: 20px;
+                left: 25px;
+                right: 25px;
+                bottom: 20px;
+            };
+        }
+        .card-body {
+            padding: {
+                top: 20px;
+                left: 25px;
+                right: 25px;
+                bottom: 20px;
+            };
+            .info-list {
+                margin-top: 15px;
+        
+                li {
+                    padding-left: 80px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+.nav-tabs {
+    --bs-nav-tabs-border-color: #eeeeee;
+    --bs-nav-tabs-link-active-border-color: #eeeeee #eeeeee var(--bs-body-bg);
+}
+.nav {
+    --bs-nav-link-padding-x: 30px;
+    --bs-nav-link-padding-y: 10px;
+    --bs-nav-link-font-size: 16px;
+    --bs-nav-link-font-weight: 500;
+    --bs-nav-link-color: var(--splash-primary-color);
+    --bs-nav-link-hover-color: var(--splash-primary-color);
+}
+
+
+// Dark Mode
+.dark {
+    .nav-tabs {
+        --bs-nav-tabs-border-color: #45445e;
+        --bs-nav-tabs-link-active-color: var(--splash-white-color);
+        --bs-nav-tabs-link-active-border-color: #45445e #45445e var(--splash-black-color);
+        --bs-nav-tabs-link-active-bg: var(--splash-black-color);
+        --bs-nav-tabs-link-hover-border-color: #45445e #45445e #45445e;
+    }
+    .form-text {
+        color: #BCBBC7;
+    }
+    .navbar-brand {
+        color: var(--splash-white-color);
+    }
+}

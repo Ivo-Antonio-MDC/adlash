@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "user/user1.jpg",
+    "courses": "3/10",
+    "name": "Jonathon Ronan",
+    "designation": "UI/UX Design Course",
+    "percent": 33
+  },
+  {
+    "id": 2,
+    "image": "user/user13.jpg",
+    "courses": "8/10",
+    "name": "Angela Carter Jenny",
+    "designation": "Web Design & Development",
+    "percent": 80
+  },
+  {
+    "id": 3,
+    "image": "user/user7.jpg",
+    "courses": "5/10",
+    "name": "Walter White",
+    "designation": "Python Development",
+    "percent": 50
+  },
+  {
+    "id": 4,
+    "image": "user/user4.jpg",
+    "courses": "29/30",
+    "name": "Victoria Zanderwhist",
+    "designation": "Data Engineering",
+    "percent": 95
+  },
+  {
+    "id": 5,
+    "image": "user/user2.jpg",
+    "courses": "7/10",
+    "name": "Sarah Taylor",
+    "designation": "HTML Course",
+    "percent": 70
+  }
+]

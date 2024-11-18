@@ -1,0 +1,8 @@
+// Dark Mode
+.dark {
+    .toast {
+        --bs-toast-color: var(--splash-white-color);
+        --bs-toast-bg: var(--splash-black-color);
+        --bs-toast-header-bg: rgba(var(--splash-black-color), 0.85);
+    }
+}

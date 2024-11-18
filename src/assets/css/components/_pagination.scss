@@ -1,0 +1,60 @@
+.pagination {
+    --bs-pagination-active-bg: var(--splash-primary-color);
+    --bs-pagination-active-border-color: var(--splash-primary-color);
+    --bs-pagination-color: var(--splash-muted-color);
+    --bs-pagination-font-size: 14px;
+    --bs-pagination-border-color: #F2F1F9;
+    --bs-pagination-border-radius: 4px;
+    --bs-pagination-hover-color: var(--splash-primary-color);
+    --bs-pagination-focus-color: var(--splash-primary-color);
+}
+.pagination-area {
+    .pagination {
+        .page-item {
+            margin: {
+                left: 3px;
+                right: 3px;
+            };
+            .page-link {
+                padding: 0;
+                width: 35px;
+                height: 35px;
+                margin-left: 0;
+                font-weight: 600;
+                line-height: 34px;
+                text-align: center;
+                box-shadow: unset !important;
+                transition: var(--transition);
+                border-radius: var(--bs-pagination-border-radius);
+    
+                i {
+                    top: 3px;
+                    line-height: 1;
+                    font-size: 16px;
+                    position: relative;
+                    transition: var(--transition);
+                    color: var(--splash-primary-color);
+                }
+                &:hover {
+                    color: var(--splash-white-color);
+                    background-color: var(--splash-primary-color);
+                    border-color: var(--bs-pagination-active-border-color);
+    
+                    i {
+                        color: var(--splash-white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .pagination {
+        --bs-pagination-border-color: #45445e;
+        --bs-pagination-bg: var(--splash-black-color);
+    }
+
+}

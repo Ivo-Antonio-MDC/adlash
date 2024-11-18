@@ -1,0 +1,207 @@
+.invoice-details-box {
+    .white-logo {
+        display: none;
+    }
+    .invoice-info {
+        padding-top: 40px;
+        border-top: 1px dashed #D2CFE4;
+        margin: {
+            top: 40px;
+            bottom: 40px;
+        };
+    }
+    .table {
+        thead {
+            tr {
+                th {
+                    border-bottom-color: #D2CFE4;
+                }
+            }
+        }
+        tbody {
+            tr {
+                th, td {
+                    padding: {
+                        top: 30px;
+                        bottom: 30px;
+                    };
+                }
+            }
+        }
+    }
+    .order-summary-list {
+        border-bottom: 1px dashed #d9e9ef;
+        padding-bottom: 10px;
+        max-width: 455px;
+        margin: {
+            left: auto;
+            right: 50px;
+        };
+        li {
+            border-bottom: 1px dashed #d9e9ef;
+            padding: {
+                top: 18px;
+                bottom: 18px;
+            };
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .invoice-details-box {
+        .white-logo {
+            display: inline;
+        }
+        .black-logo {
+            display: none;
+        }
+        .invoice-info {
+            border-top-color: #45445e;
+        }
+        .table {
+            thead {
+                tr {
+                    th {
+                        border-bottom-color: #45445e;
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            border-bottom-color: #45445e;
+            
+            li {
+                border-bottom-color: #45445e;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .invoice-details-box {
+        .invoice-info {
+            padding-top: 20px;
+            margin: {
+                top: 20px;
+                bottom: 20px;
+            };
+        }
+        .table {
+            tbody {
+                tr {
+                    th, td {
+                        padding: {
+                            top: 15px;
+                            bottom: 15px;
+                        };
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            padding-bottom: 8px;
+            max-width: 100%;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+            li {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .invoice-details-box {
+        .invoice-info {
+            padding-top: 25px;
+            margin: {
+                top: 25px;
+                bottom: 25px;
+            };
+        }
+        .table {
+            tbody {
+                tr {
+                    th, td {
+                        padding: {
+                            top: 15px;
+                            bottom: 15px;
+                        };
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            max-width: 100%;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+            li {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .invoice-details-box {
+        .invoice-info {
+            padding-top: 35px;
+            margin: {
+                top: 35px;
+                bottom: 35px;
+            };
+        }
+        .table {
+            tbody {
+                tr {
+                    th, td {
+                        padding: {
+                            top: 20px;
+                            bottom: 20px;
+                        };
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            margin-right: 25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .invoice-details-box {
+        .order-summary-list {
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .invoice-details-box {
+        .order-summary-list {
+            margin-right: 95px;
+        }
+    }
+
+}

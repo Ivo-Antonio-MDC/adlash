@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "user/user7.jpg",
+    "name": "Jacob Linowiski",
+    "AgentId": "125003",
+    "Average": "55"
+  },
+  {
+    "id": 2,
+    "image": "user/user2.jpg",
+    "name": "Jane Ronan",
+    "AgentId": "225304",
+    "Average": "50"
+  },
+  {
+    "id": 3,
+    "image": "user/user3.jpg",
+    "name": "Angela Carter",
+    "AgentId": "435505",
+    "Average": "45 "
+  },
+  {
+    "id": 4,
+    "image": "user/user4.jpg",
+    "name": "Walter White",
+    "AgentId": "655662",
+    "Average": "40 "
+  }
+]

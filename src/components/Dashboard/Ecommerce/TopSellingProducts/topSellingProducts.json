@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "class": "text-primary",
+    "image": "products/product-mini1.jpg",
+    "title": "Macbook Air - 8gb",
+    "itemSold": "14K",
+    "stock": "321"
+  },
+  {
+    "id": 2,
+    "class": "text-primary",
+    "image": "products/product-mini2.jpg",
+    "title": "iPad Pro 14 - With Pencil",
+    "itemSold": "2.4K",
+    "stock": "250"
+  },
+  {
+    "id": 3,
+    "class": "text-primary",
+    "image": "products/product-mini3.jpg",
+    "title": "Apple Smart Watch",
+    "itemSold": "22K",
+    "stock": "532"
+  },
+  {
+    "id": 4,
+    "class": "text-primary",
+    "image": "products/product-mini4.jpg",
+    "title": "iPhone 14 Pro Max",
+    "itemSold": "10K",
+    "stock": "320"
+  },
+  {
+    "id": 5,
+    "class": "text-primary",
+    "image": "products/product-mini5.jpg",
+    "title": "Clay Camera For Showcase",
+    "itemSold": "9K",
+    "stock": "121"
+  }
+]

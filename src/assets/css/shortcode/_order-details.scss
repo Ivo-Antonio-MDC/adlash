@@ -1,0 +1,342 @@
+.order-details-box {
+    padding: {
+        top: 30px;
+        bottom: 30px;
+    };
+    .card-head {
+        border-bottom: 1px dashed #d9e9ef;
+        padding: {
+            left: 30px;
+            right: 30px;
+            bottom: 28px;
+        };
+        i {
+            font-size: 32px;
+            line-height: .01;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+    .card-body {
+        padding: 0 30px;
+
+        .list {
+            li {
+                border-bottom: 1px dashed #d9e9ef;
+                padding: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                .title {
+                    padding-left: 30px;
+
+                    i {
+                        left: 0;
+                        top: 50%;
+                        line-height: 1;
+                        font-size: 20px;
+                        color: #A09FB0;
+                        position: absolute;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            border-bottom: 1px dashed #d9e9ef;
+            padding-bottom: 15px;
+
+            li {
+                border-bottom: 1px dashed #d9e9ef;
+                padding: {
+                    top: 21.1px;
+                    bottom: 21.1px;
+                };
+            }
+        }
+        .table, table {
+            >:not(caption)>*>* {
+                padding:  {
+                    top: 20px;
+                    bottom: 20px;
+                };
+            }
+        }
+        .payment-address-list {
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 12px;
+                padding-left: 80px;
+
+                span {
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .track-order-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            
+            li {
+                flex: 1 0 0%;
+                z-index: 1;
+                
+                &::before {
+                    left: 0;
+                    right: 0;
+                    top: 12px;
+                    content: '';
+                    z-index: -1;
+                    margin-left: 6px;
+                    position: absolute;
+                    border: {
+                        style: dashed;
+                        left-width: 0;
+                        top-width: 1px;
+                        right-width: 0;
+                        bottom-width: 0;
+                        color: var(--splash-primary-color);
+                    };
+                }
+                .dot {
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    border: 1px solid var(--splash-primary-color);
+
+                    &::before {
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        content: '';
+                        margin: 5px;
+                        display: none;
+                        position: absolute;
+                        border-radius: 50%;
+                        background: var(--splash-primary-color);
+                    }
+                }
+                &.active {
+                    .dot {
+                        &::before {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .order-details-box {
+        .card-head {
+            border-bottom-color: #45445e;
+        }
+        .card-body {
+            .list {
+                li {
+                    border-bottom-color: #45445e;
+                    
+                    .title {
+                        i {
+                            color: #BCBBC7;
+                        }
+                    }
+                }
+            }
+            .order-summary-list {
+                border-bottom-color: #45445e;
+    
+                li {
+                    border-bottom-color: #45445e;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .order-details-box {
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        };
+        .card-head {
+            padding: {
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            };
+            i {
+                font-size: 25px;
+            }
+            h5 {
+                font-size: 15px;
+            }
+        }
+        .card-body {
+            padding: 0 15px;
+    
+            .list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                    .title {
+                        padding-left: 25px;
+    
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .order-summary-list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .table, table {
+                >:not(caption)>*>* {
+                    padding:  {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .payment-address-list {
+                margin-top: 15px;
+    
+                li {
+                    padding-left: 70px;
+                }
+            }
+            .track-order-list {
+                margin-top: 15px;
+                flex-wrap: unset;
+                display: block;
+                
+                li {
+                    flex: unset;
+                    padding: {
+                        left: 30px;
+                        top: 15px;
+                    };
+                    &::before {
+                        top: 0;
+                        bottom: 0;
+                        right: auto;
+                        margin-left: 12px;
+                        border: {
+                            left-width: 1px;
+                            top-width: 0;
+                        };
+                    }
+                    .dot {
+                        margin-left: -30px;
+                    }
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .order-details-box {
+        padding: {
+            top: 20px;
+            bottom: 20px;
+        };
+        .card-head {
+            padding: {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            };
+        }
+        .card-body {
+            padding: 0 20px;
+    
+            .payment-address-list {
+                margin-top: 20px;
+            }
+            .track-order-list {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .order-details-box {
+        padding: {
+            top: 25px;
+            bottom: 25px;
+        };
+        .card-head {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 25px;
+            };
+            i {
+                font-size: 28px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+        }
+        .card-body {
+            padding: 0 25px;
+    
+            .list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .order-summary-list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .table, table {
+                >:not(caption)>*>* {
+                    padding:  {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+        }
+    }
+
+}

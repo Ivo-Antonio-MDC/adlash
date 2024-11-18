@@ -1,0 +1,479 @@
+.shopping-cart-box {
+    .card-body {
+        padding: 0;
+
+        .table, table {
+            >:not(caption)>*>* {
+                padding:  {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                .number-counter {
+                    position: relative;
+                    width: 110px;
+
+                    input {
+                        border: 1px solid var(--splash-primary-color);
+                        color: var(--splash-black-color);
+                        -moz-appearance: textfield;
+                        background: #F3F2FA;
+                        border-radius: 4px;
+                        text-align: center;
+                        display: block;
+                        height: 38px;
+                        width: 100%;
+                        font: {
+                            size: 15px;
+                            weight: 700;
+                        };
+                        &::placeholder {
+                            color: var(--splash-black-color);
+                        }
+                        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+                    button {
+                        color: var(--splash-black-color);
+                        background-color: transparent;
+                        transition: var(--transition);
+                        font-weight: 900;
+                        position: absolute;
+                        font-size: 11px;
+                        line-height: 1;
+                        left: 15px;
+                        padding: 0;
+                        border: 0;
+                        bottom: 0;
+                        top: 0;
+
+                        i {
+                            position: relative;
+                            top: 1px;
+                        }
+                        &:last-child {
+                            left: auto;
+                            right: 15px;
+                        }
+                        &:hover {
+                            color: var(--splash-primary-color);
+                        }
+                    }
+                }
+                &:first-child {
+                    padding-left: 30px;
+                }
+                &:last-child {
+                    padding-right: 30px;
+                }
+            }
+        }
+        form {
+            padding: 30px;
+        }
+    }
+}
+.order-summary-box {
+    padding: {
+        top: 30px;
+        bottom: 30px;
+    };
+    .card-head {
+        border-bottom: 1px dashed #d9e9ef;
+        padding: {
+            left: 30px;
+            right: 30px;
+            bottom: 28px;
+        };
+        i {
+            font-size: 32px;
+            line-height: .01;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+    .card-body {
+        padding: 0 30px;
+
+        .table, table {
+            >:not(caption)>*>* {
+                padding:  {
+                    top: 20px;
+                    bottom: 20px;
+                };
+            }
+            >:not(caption)>* {
+                &:last-child {
+                    th, td {
+                        border-color: #8E8DA2;
+                    }
+                }
+            }
+        }
+        .order-summary-list {
+            border-bottom: 1px dashed #d9e9ef;
+            padding-bottom: 15px;
+
+            li {
+                border-bottom: 1px dashed #d9e9ef;
+                padding: {
+                    top: 21.1px;
+                    bottom: 21.1px;
+                };
+            }
+        }
+        .coupon-code {
+            margin-top: 30px;
+
+            .box {
+                background: #ECF3F2;
+                border-radius: 2px;
+                padding: 10px 15px;
+            }
+            .search-box {
+                margin-top: 15px;
+                
+                .form-control {
+                    background: #F5F4FA;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    .number-counter {
+                        input {
+                            background: var(--splash-black-color);
+                            
+                            &::placeholder {
+                                color: var(--splash-white-color);
+                            }
+                        }
+                        button {
+                            color: var(--splash-white-color);
+    
+                            &:hover {
+                                color: var(--splash-primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-summary-box {
+        .card-head {
+            border-bottom-color: #45445e;
+        }
+        .card-body {
+            .table, table {
+                >:not(caption)>* {
+                    &:last-child {
+                        th, td {
+                            border-color: #45445e;
+                        }
+                    }
+                }
+            }
+            .order-summary-list {
+                border-bottom-color: #45445e;
+    
+                li {
+                    border-bottom-color: #45445e;
+                }
+            }
+            .coupon-code {
+                .box {
+                    background: var(--splash-black-color);
+                }
+                .search-box {
+                    .form-control {
+                        background: var(--splash-black-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    padding:  {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                    &:first-child {
+                        padding-left: 15px;
+                    }
+                    &:last-child {
+                        padding-right: 15px;
+                    }
+                }
+            }
+            form {
+                padding: 15px;
+            }
+        }
+    }
+    .order-summary-box {
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        };
+        .card-head {
+            padding: {
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            };
+            i {
+                font-size: 25px;
+            }
+            h5 {
+                font-size: 15px;
+            }
+        }
+        .card-body {
+            padding: 0 15px;
+    
+            .order-summary-list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .table, table {
+                >:not(caption)>*>* {
+                    padding:  {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .coupon-code {
+                margin-top: 15px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    &:first-child {
+                        padding-left: 20px;
+                    }
+                    &:last-child {
+                        padding-right: 20px;
+                    }
+                }
+            }
+            form {
+                padding: 20px;
+            }
+        }
+    }
+    .order-summary-box {
+        padding: {
+            top: 20px;
+            bottom: 20px;
+        };
+        .card-head {
+            padding: {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            };
+        }
+        .card-body {
+            padding: 0 20px;
+    
+            .coupon-code {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    &:first-child {
+                        padding-left: 25px;
+                    }
+                    &:last-child {
+                        padding-right: 25px;
+                    }
+                }
+            }
+            form {
+                padding: 25px;
+            }
+        }
+    }
+    .order-summary-box {
+        padding: {
+            top: 25px;
+            bottom: 25px;
+        };
+        .card-head {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 25px;
+            };
+            i {
+                font-size: 28px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+        }
+        .card-body {
+            padding: 0 25px;
+    
+            .order-summary-list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .table, table {
+                >:not(caption)>*>* {
+                    padding:  {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .coupon-code {
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    &:first-child {
+                        padding-left: 25px;
+                    }
+                    &:last-child {
+                        padding-right: 25px;
+                    }
+                }
+            }
+            form {
+                padding: 25px;
+            }
+        }
+    }
+    .order-summary-box {
+        padding: {
+            top: 25px;
+            bottom: 25px;
+        };
+        .card-head {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 25px;
+            };
+        }
+        .card-body {
+            padding: 0 25px;
+    
+            .coupon-code {
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    &:first-child {
+                        padding-left: 25px;
+                    }
+                    &:last-child {
+                        padding-right: 25px;
+                    }
+                }
+            }
+            form {
+                padding: 25px;
+            }
+        }
+    }
+    .order-summary-box {
+        padding: {
+            top: 25px;
+            bottom: 25px;
+        };
+        .card-head {
+            padding: {
+                left: 25px;
+                right: 25px;
+                bottom: 25px;
+            };
+        }
+        .card-body {
+            padding: 0 25px;
+    
+            .coupon-code {
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .shopping-cart-box {
+        .card-body {
+            .table, table {
+                >:not(caption)>*>* {
+                    &.product-title {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

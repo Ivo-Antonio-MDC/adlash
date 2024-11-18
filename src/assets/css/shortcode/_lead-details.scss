@@ -1,0 +1,274 @@
+.lead-info-box {
+    .profile-info {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .title {
+            margin-left: 18px;
+        }
+    }
+    .border-top {
+        border-top: 1px dashed #d9e9ef !important;
+    }
+    .info {
+        li {
+            margin-bottom: 25px;
+            padding-left: 65px;
+
+            .icon {
+                left: 0;
+                top: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                position: absolute;
+                background: #ECF3F2;
+                transform: translateY(-50%);
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    line-height: 1;
+                    margin-top: 1px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.leads-details-tabs {
+    .nav {
+        &.nav-tabs {
+            .nav-item {
+                flex: 1 0 0%;
+
+                .nav-link {
+                    background-color: var(--splash-white-color);
+                    color: var(--splash-black-color);
+                    padding: 25px 15px;
+                    margin-bottom: 0;
+
+                    &.active {
+                        background-color: var(--splash-primary-color);
+                        color: var(--splash-white-color);
+                    }
+                }
+            }
+        }
+    }
+    .to-do-list-box {
+        .form-check {
+            .form-check-input {
+                &:checked+label {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+    .attachments-box {
+        .list {
+            li {
+                border-top: 1px dashed #d9e9ef;
+                padding: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .lead-info-box {
+        .border-top {
+            border-top-color: #45445e !important;
+        }
+        .info {
+            li {
+                .icon {
+                    background: var(--splash-black-color);
+                }
+            }
+        }
+    }
+    .leads-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        background-color: #34334a;
+                        color: var(--splash-white-color);
+    
+                        &.active {
+                            background-color: var(--splash-primary-color);
+                        }
+                    }
+                }
+            }
+        }
+        .attachments-box {
+            .list {
+                li {
+                    border-top-color: #45445e !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    .lead-info-box {
+        .profile-info {
+            .title {
+                margin-left: 0;
+            }
+        }
+        .info {
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .leads-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        font-size: 14px;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+        .attachments-box {
+            .list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .lead-info-box {
+        .profile-info {
+            .title {
+                margin-left: 18px;
+            }
+        }
+    }
+    .leads-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .lead-info-box {
+        .info {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .leads-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        padding: 20px 15px;
+                    }
+                }
+            }
+        }
+        .attachments-box {
+            .list {
+                li {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .leads-details-tabs {
+        .nav {
+            &.nav-tabs {
+                .nav-item {
+                    .nav-link {
+                        padding: 20px 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .lead-info-box {
+        .profile-info {
+            &.d-sm-flex {
+                display: block !important;
+            }
+            .title {
+                margin: {
+                    left: 0;
+                    top: 12px !important;
+                };
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .lead-info-box {
+        .profile-info {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            .title {
+                margin-left: 25px;
+            }
+        }
+    }
+
+}

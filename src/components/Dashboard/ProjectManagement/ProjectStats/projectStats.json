@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "image": "projects/project-mini1.jpg",
+    "title": "Adlash Dashboard Design",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "user/user1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user2.jpg"
+      },
+      {
+        "id": 3,
+        "image": "user/user3.jpg"
+      }
+    ],
+    "budget": "18,500",
+    "dueDate": "9th Aug, 2023",
+    "progress": "80",
+    "class": "text-outline-primary",
+    "status": "In Process",
+    "chartImage": "chart/chart1.png"
+  },
+  {
+    "id": 2,
+    "image": "projects/project-mini2.jpg",
+    "title": "Banko CRM Dashboard Design",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "user/user4.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user5.jpg"
+      }
+    ],
+    "budget": "50,00",
+    "dueDate": "8th Aug, 2023",
+    "progress": "25",
+    "class": "text-outline-danger",
+    "status": "On Hold",
+    "chartImage": "chart/chart2.png"
+  },
+  {
+    "id": 3,
+    "image": "projects/project-mini3.jpg",
+    "title": "Adlash Agency Design",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "user/user3.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user5.jpg"
+      },
+      {
+        "id": 3,
+        "image": "user/user4.jpg"
+      },
+      {
+        "id": 4,
+        "image": "user/user2.jpg"
+      }
+    ],
+    "budget": "108,500",
+    "dueDate": "7th Aug, 2023",
+    "progress": "100",
+    "class": "text-outline-success",
+    "status": "Completed",
+    "chartImage": "chart/chart3.png"
+  },
+  {
+    "id": 4,
+    "image": "projects/project-mini4.jpg",
+    "title": "Adlash Dashboard Design",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "user/user3.jpg"
+      },
+      {
+        "id": 2,
+        "image": "user/user2.jpg"
+      }
+    ],
+    "budget": "8,500",
+    "dueDate": "6th Aug, 2023",
+    "progress": "40",
+    "class": "text-outline-primary",
+    "status": "In Process",
+    "chartImage": "chart/chart4.png"
+  },
+  {
+    "id": 5,
+    "image": "projects/project-mini5.jpg",
+    "title": "Adlash App Design",
+    "teamMembers": [
+      {
+        "id": 1,
+        "image": "user/user5.jpg"
+      }
+    ],
+    "budget": "1,500",
+    "dueDate": "5th Aug, 2023",
+    "progress": "55",
+    "class": "text-outline-success",
+    "status": "Completed",
+    "chartImage": "chart/chart5.png"
+  }
+]

@@ -1,0 +1,19 @@
+.progress, .progress-stacked {
+    --bs-progress-height: 12px;
+    --bs-progress-border-radius: 30px;
+    --bs-progress-font-size: 14px;
+    --bs-progress-bg: #F2F1F9;
+    --bs-progress-bar-bg: var(--splash-primary-color);
+}
+.progress-bar {
+    border-radius: var(--bs-progress-border-radius);
+}
+
+// Dark Mode
+.dark {
+
+    .progress, .progress-stacked {
+        --bs-progress-bg: #4b4a63;
+    }
+    
+}

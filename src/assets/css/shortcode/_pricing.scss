@@ -1,0 +1,85 @@
+.pricing-card {
+    .card-body {
+        .price {
+            div {
+                font-size: 28px;
+            }
+        }
+        p {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 14px;
+                padding-left: 28px;
+
+                i {
+                    left: 0;
+                    top: 50%;
+                    line-height: 1;
+                    font-size: 18px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    color: var(--splash-primary-color);
+
+                    &.flaticon-close {
+                        color: red;
+                        font-size: 16px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .link-btn {
+            background: #F8F8FC;
+
+            i {
+                line-height: .01;
+                font-size: 20px;
+            }
+            &:hover {
+                span {
+                    &::before {
+                        transform: scaleX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .pricing-card {
+        .card-body {
+            .link-btn {
+                background: var(--splash-black-color);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .pricing-card {
+        .card-body {
+            ul {
+                li {
+                    margin-bottom: 12px;
+                    padding-left: 24px;
+    
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+}

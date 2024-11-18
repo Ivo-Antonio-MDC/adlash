@@ -1,0 +1,134 @@
+.faq-accordion-card {
+    .card-body {
+        .accordion {
+            .accordion-item {
+                margin-bottom: 25px;
+
+                .accordion-button {
+                    background: #EFEEF9;
+                    padding-right: 45px;
+                    line-height: 1.7;
+                    
+                    &::after {
+                        top: 50%;
+                        right: 20px;
+                        margin-left: 0;
+                        position: absolute;
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                    &.collapsed {
+                        &::after {
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+                .accordion-body {
+                    padding: {
+                        top: 20px;
+                        left: 20px;
+                        right: 20px;
+                    };
+                    p {
+                        margin-bottom: 15px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .faq-accordion-card {
+        .card-body {
+            .accordion {
+                .accordion-item {
+                    background-color: transparent;
+
+                    .accordion-button {
+                        background: var(--splash-black-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .faq-accordion-card {
+        .card-body {
+            .accordion {
+                .accordion-item {
+                    margin-bottom: 15px;
+    
+                    .accordion-button {
+                        padding: {
+                            left: 15px;
+                            right: 25px;
+                        };
+                        &::after {
+                            right: 10px;
+                        }
+                    }
+                    .accordion-body {
+                        padding: {
+                            left: 0;
+                            right: 0;
+                            top: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .faq-accordion-card {
+        .card-body {
+            .accordion {
+                .accordion-item {
+                    margin-bottom: 20px;
+    
+                    .accordion-body {
+                        padding: {
+                            left: 0;
+                            right: 0;
+                            top: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .faq-accordion-card {
+        .card-body {
+            .accordion {
+                .accordion-item {
+                    margin-bottom: 20px;
+    
+                    .accordion-body {
+                        padding: {
+                            top: 15px;
+                            left: 15px;
+                            right: 15px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}

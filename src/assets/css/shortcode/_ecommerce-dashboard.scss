@@ -1,0 +1,457 @@
+// Welcome Box
+.welcome-box {
+    background: linear-gradient(180deg, rgba(187, 196, 245, 0.6) 0%, rgba(183, 193, 244, 0.6) 48.44%, rgba(175, 184, 239, 0.6) 71.87%, rgba(172, 182, 237, 0.6) 100%);
+
+    .card-body {
+        padding-left: 30px;
+    }
+    .title {
+        top: -12px;
+    }
+    ul {
+        margin-top: 45px;
+        
+        li {
+            padding: {
+                left: 28px;
+                right: 25px;
+            };
+            span {
+                font-size: 24px;
+            }
+            &::before {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                width: 1.5px;
+                margin-top: 3px;
+                position: absolute;
+                background: rgba(255, 255, 255, 0.3);
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+                
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Stats
+.stats-box {
+    .card-body {
+        padding: {
+            top: 28px;
+            bottom: 28px;
+        };
+    }
+    .icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+        background: #F8F8FB;
+
+        i {
+            left: 0;
+            right: 0;
+            top: 50%;
+            line-height: 1;
+            margin-top: 1.5px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+    }
+    h4 {
+        font-size: 24px;
+    }
+}
+
+// Expected Earnings
+.expected-earnings-box {
+    h4 {
+        font-size: 24px;
+    }
+    .list {
+        li {
+            margin-bottom: 2px;
+            padding-left: 17px;
+
+            &::before {
+                left: 0;
+                top: 50%;
+                width: 10px;
+                content: '';
+                height: 10px;
+                border-radius: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                background: var(--splash-info-color);
+            }
+            &:nth-child(2), &:nth-child(5) {
+                &::before {
+                    background: var(--splash-success-color);
+                }
+            }
+            &:nth-child(3), &:nth-child(6) {
+                &::before {
+                    background: var(--splash-primary-color);
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .chart {
+        top: 50px;
+        right: -65px;
+        position: absolute;
+    }
+}
+
+// Avarage Daily Sales
+.daily-sales-box {
+    h4 {
+        font-size: 24px;
+    }
+    .chart {
+        border-bottom: 1px dashed #d9e9ef;
+    }
+}
+
+// Revenue This Month
+.monthly-revenue-box {
+    h4 {
+        font-size: 24px;
+    }
+}
+
+// New Customers This Month
+.monthly-new-customers-box {
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    .users-list {
+        div {
+            width: 45px;
+            height: 45px;
+            margin-right: -20px;
+            border: 2px solid var(--splash-white-color);
+            filter: drop-shadow(0px 4px 4px rgba(101, 96, 240, 0.1));
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Sales By POS Location
+.sales-pos-location-box {
+    .list {
+        li {
+            margin-bottom: 5px;
+            padding-left: 17px;
+
+            &::before {
+                left: 0;
+                top: 50%;
+                width: 10px;
+                content: '';
+                height: 10px;
+                margin-top: -.5px;
+                border-radius: 50%;
+                position: absolute;
+                transform: translateY(-50%);
+                background: var(--splash-primary-color);
+            }
+            &:nth-child(2) {
+                &::before {
+                    background: var(--splash-success-color);
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .card-body {
+      &.pb-0 {
+        padding-bottom: 0 !important;
+      }  
+    }
+}
+
+// Website Visitors
+.website-visitors {
+    .card-body {
+      &.pb-0 {
+        padding-bottom: 0 !important;
+      }  
+    }
+}
+
+// Top Selling Products
+.top-selling-products-box {
+    .list {
+        li {
+            border-bottom: 0.5px dashed #f0f0f0;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.table-responsive {
+    margin-bottom: 0;
+}
+
+// Dark Mode
+.dark {
+
+    .welcome-box {
+        background: #34334a;
+    
+        ul {
+            li {
+                &::before {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+    }
+
+    .stats-box {
+        .icon {
+            background: var(--splash-black-color);
+        }
+    }
+
+    .daily-sales-box {
+        .chart {
+            border-bottom-color: #45445e;
+        }
+    }
+
+    .monthly-new-customers-box {
+        .users-list {
+            div {
+                border-color: #45445e;
+            }
+        }
+    }
+
+    .top-selling-products-box {
+        .list {
+            li {
+                border-bottom-color: #45445e;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    // Welcome Box
+    .welcome-box {
+        .card-body {
+            padding-left: 15px;
+        }
+        .title {
+            top: 0;
+        }
+        ul {
+            margin-top: 15px;
+            
+            li {
+                padding: {
+                    left: 13px;
+                    right: 13px;
+                };
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    // Expected Earnings
+    .expected-earnings-box {
+        h4 {
+            font-size: 20px;
+        }
+        .list {
+            li {
+                &::before {
+                    margin-top: -0.5px;
+                }
+            }
+        }
+        .chart {
+            top: 10px;
+            right: -80px;
+        }
+    }
+
+    // Avarage Daily Sales
+    .daily-sales-box {
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    // Revenue This Month
+    .monthly-revenue-box {
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    // New Customers This Month
+    .monthly-new-customers-box {
+        .card-body {
+            display: block;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        .users-list {
+            margin-top: 15px;
+
+            div {
+                width: 35px;
+                height: 35px;
+                border-width: 1px;
+                margin-right: -15px;
+            }
+        }
+    }
+
+    // Stats
+    .stats-box {
+        .card-body {
+            padding: {
+                top: 20px;
+                bottom: 20px;
+            };
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    // Top Selling Products
+    .top-selling-products-box {
+        .list {
+            li {
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Welcome Box
+    .welcome-box {
+        .card-body {
+            padding-left: 20px;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Welcome Box
+    .welcome-box {
+        .card-body {
+            padding-left: 25px;
+        }
+        .title {
+            top: -15px;
+        }
+        ul {
+            margin-top: 25px;
+        }
+    }
+
+    // Stats
+    .stats-box {
+        .card-body {
+            padding: {
+                top: 25px;
+                bottom: 25px;
+            };
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // New Customers This Month
+    .monthly-new-customers-box {
+        .card-body {
+            display: block;
+        }
+        .users-list {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    // Welcome Box
+    .welcome-box {
+        .card-body {
+            padding-left: 50px;
+        }
+    }
+
+    // Stats
+    .stats-box {
+        .icon {
+            width: 78px;
+            height: 78px;
+        }
+    }
+
+    // Revenue This Month
+    .monthly-revenue-box {
+        .mt-25 {
+            margin-top: 35px !important;
+        }
+    }
+
+    // New Customers This Month
+    .monthly-new-customers-box {
+        .card-body {
+            display: block;
+        }
+        .users-list {
+            margin-top: 33px;
+        }
+    }
+
+}

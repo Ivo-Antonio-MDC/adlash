@@ -1,0 +1,58 @@
+.badge {
+    --bs-badge-padding-x: 10px;
+    --bs-badge-padding-y: 7px;
+    --bs-badge-font-size: 12px;
+    --bs-badge-font-weight: 600;
+    --bs-badge-border-radius: 2px;
+    letter-spacing: 0.01em;
+
+    &.bg-outline-primary {
+        border: 1px solid var(--splash-primary-color);
+        color: var(--splash-primary-color);
+    }
+    &.bg-outline-secondary {
+        border: 1px solid var(--splash-secondary-color);
+        color: var(--splash-secondary-color);
+    }
+    &.bg-outline-success {
+        border: 1px solid var(--splash-success-color);
+        color: var(--splash-success-color);
+    }
+    &.bg-outline-warning {
+        border: 1px solid var(--splash-warning-color);
+        color: var(--splash-warning-color);
+    }
+    &.bg-outline-info {
+        border: 1px solid var(--splash-info-color);
+        color: var(--splash-info-color);
+    }
+    &.bg-outline-dark {
+        border: 1px solid var(--splash-black-color);
+        color: var(--splash-black-color);
+    }
+}
+.text-badge {
+    background: #E8F4F1;
+    border-radius: 3px;
+    padding: 2px 8px;
+
+    &.text-danger {
+        background: #F3EBEB;
+    }
+}
+.text-bg-light {
+    color: var(--splash-black-color) !important;
+}
+
+// Dark Mode
+.dark {
+    
+    .text-badge {
+        background: var(--splash-black-color);
+
+        &.text-danger {
+            background: var(--splash-black-color);
+        }
+    }
+    
+}

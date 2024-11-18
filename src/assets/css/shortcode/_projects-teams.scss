@@ -1,0 +1,89 @@
+.projects-teams-card {
+    .card-body {
+        .progress {
+            height: 9px;
+        }
+        .info {
+            li {
+                margin-bottom: 10px;
+
+                .user {
+                    img {
+                        border: 2px solid var(--splash-white-color);
+                        filter: drop-shadow(0px 4px 4px rgba(101, 96, 240, 0.1));
+                    }
+                }
+                .users-list {
+                    div {
+                        width: 33px;
+                        height: 33px;
+                        margin-right: -10px;
+                        border: 2px solid var(--splash-white-color);
+                        filter: drop-shadow(0px 4px 4px rgba(101, 96, 240, 0.1));
+            
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .view-btn {
+            background: #F2F1F9;
+
+            span {
+                line-height: 1.3;
+
+                &::before {
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 1px;
+                    content: '';
+                    position: absolute;
+                    transition: var(--transition);
+                    background: var(--splash-primary-color);
+                }
+            }
+            i {
+                line-height: .01;
+                font-size: 20px;
+            }
+            &:hover {
+                span {
+                    &::before {
+                        transform: scaleX(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .projects-teams-card {
+        .card-body {
+            .info {
+                li {
+                    .user {
+                        img {
+                            border-color: #45445e;
+                        }
+                    }
+                    .users-list {
+                        div {
+                            border-color: #45445e;
+                        }
+                    }
+                }
+            }
+            .view-btn {
+                background: var(--splash-black-color);
+            }
+        }
+    }
+}

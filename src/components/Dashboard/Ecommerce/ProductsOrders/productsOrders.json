@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "orderID": "#XTD-4629",
+    "createdTime": "2 mins",
+    "image": "user/user1.jpg",
+    "name": "J. Ronan",
+    "totalPrice": "650",
+    "profitPrice": "150",
+    "class": "text-outline-primary",
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "orderID": "#SPI-2123",
+    "createdTime": "5 mins",
+    "image": "user/user2.jpg",
+    "name": "V. James",
+    "totalPrice": "720",
+    "profitPrice": "220",
+    "class": "text-outline-info",
+    "status": "Confirmed"
+  },
+  {
+    "id": 3,
+    "orderID": "#XLP-1119",
+    "createdTime": "10 mins",
+    "image": "user/user3.jpg",
+    "name": "A. Carter",
+    "totalPrice": "250",
+    "profitPrice": "50",
+    "class": "text-outline-success",
+    "status": "Shipped"
+  },
+  {
+    "id": 4,
+    "orderID": "#ITS-4126",
+    "createdTime": "15 mins",
+    "image": "user/user4.jpg",
+    "name": "J. Andy",
+    "totalPrice": "1650",
+    "profitPrice": "200",
+    "class": "text-outline-danger",
+    "status": "Rejected"
+  },
+  {
+    "id": 5,
+    "orderID": "#ITL-9036",
+    "createdTime": "20 mins",
+    "image": "user/user5.jpg",
+    "name": "B. White",
+    "totalPrice": "150",
+    "profitPrice": "30",
+    "class": "text-outline-success",
+    "status": "Shipped"
+  },
+  {
+    "id": 6,
+    "orderID": "#TSL-4629",
+    "createdTime": "40 mins",
+    "image": "user/user6.jpg",
+    "name": "S. Smith",
+    "totalPrice": "750",
+    "profitPrice": "75",
+    "class": "text-outline-success",
+    "status": "Shipped"
+  },
+  {
+    "id": 7,
+    "orderID": "#ABC-5432",
+    "createdTime": "3 hrs",
+    "image": "user/user7.jpg",
+    "name": "A. David",
+    "totalPrice": "453",
+    "profitPrice": "99",
+    "class": "text-outline-danger",
+    "status": "Rejected"
+  },
+  {
+    "id": 8,
+    "orderID": "#XYZ-6789",
+    "createdTime": "6 hrs",
+    "image": "user/user8.jpg",
+    "name": "S. Taylor",
+    "totalPrice": "999",
+    "profitPrice": "23",
+    "class": "text-outline-success",
+    "status": "Shipped"
+  }
+]

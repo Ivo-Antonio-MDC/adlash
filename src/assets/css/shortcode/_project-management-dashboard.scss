@@ -1,0 +1,842 @@
+// Stats
+.stats-item {
+    h4 {
+        font-size: 20px;
+    }
+    .icon {
+        width: 78px;
+        height: 78px;
+        font-size: 32px;
+        background: #F8F8FB;
+
+        i {
+            left: 0;
+            right: 0;
+            top: 50%;
+            line-height: 1;
+            margin-top: 1.5px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+    }
+    .users-list {
+        div {
+            width: 45px;
+            height: 45px;
+            margin-right: -20px;
+            border: 2px solid var(--splash-white-color);
+            filter: drop-shadow(0px 4px 4px rgba(101, 96, 240, 0.1));
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .chart {
+        margin: -25px -10px -15px 0;
+    }
+}
+
+// To Do List
+.to-do-list-box {
+    .to-do-list {
+        .to-do-list-item {
+            border-top: 1px dashed #d9e9ef;
+            padding: {
+                top: 19.1px;
+                bottom: 19.1px;
+            };
+            .dropdown-toggle {
+                color: #A09FB0;
+                font-size: 20px;
+                
+                &::after {
+                    display: none;
+                }
+                &:hover {
+                    color: var(--splash-primary-color);
+                }
+            }
+            .action-buttons {
+                button {
+                    font-size: 20px;
+
+                    &:hover {
+                        color: var(--splash-primary-color) !important;
+                    }
+                }
+            }
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        &.style-two {
+            .to-do-list-item {
+                padding: {
+                    top: 15.3px;
+                    bottom: 15.3px;
+                };
+                &:last-child {
+                    padding-bottom: 0;
+                }
+                .form-check-primary {
+                    .form-check-input {
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+        &.style-three {
+            .to-do-list-item {
+                padding: {
+                    top: 13px;
+                    bottom: 13px;
+                };
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Active Tasks
+.active-tasks-box {
+    .active-tasks-list {
+        .active-task-list-item {
+            border-top: 1px dashed #d9e9ef;
+            padding: {
+                top: 16.8px;
+                bottom: 16.8px;
+            };
+            .task-info {
+                background: #F3F7F9;
+                border-radius: 50px;
+                margin-left: 5%;
+
+                .users-list {
+                    padding: 4px;
+                    margin-right: 100px;
+                    border-radius: 50px;
+
+                    div {
+                        width: 33px;
+                        height: 33px;
+                        margin-right: -10px;
+                        border: 1px solid var(--splash-white-color);
+            
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2), &:nth-child(7) {
+                .task-info {
+                    margin-left: 25%;
+                }
+            }
+            &:nth-child(3), &:nth-child(8) {
+                .task-info {
+                    margin-left: 35%;
+                }
+            }
+            &:nth-child(4), &:nth-child(9) {
+                .task-info {
+                    margin-left: 10%;
+                }
+            }
+            &:nth-child(5), &:nth-child(10) {
+                .task-info {
+                    margin-left: 30%;
+                }
+            }
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+// Working Schedule
+.working-schedule-box {
+    .schedule-date-list {
+        border-bottom: 1px dashed #d9e9ef;
+        padding-bottom: 20px;
+
+        li {
+            border-radius: 30px;
+            padding: {
+                top: 18px;
+                bottom: 18px;
+            };
+            margin: {
+                left: 5px;
+                right: 5px;
+            };
+            &.active {
+                background-color: var(--splash-primary-color);
+                color: var(--splash-white-color) !important;
+
+                span {
+                    color: var(--splash-white-color) !important;
+                }
+            }
+        }
+    }
+    .info-list {
+        li {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .schedule-list {
+        .content {
+            h6 {
+                font-size: 18px;
+            }
+            .icon {
+                width: 28px;
+                height: 28px;
+
+                i {
+                    left: 0;
+                    right: 0;
+                    top: 50%;
+                    line-height: 1;
+                    margin-top: 1px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .list-item {
+            margin-bottom: 10px;
+    
+            &::before {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 4px;
+                content: '';
+                position: absolute;
+            }
+            &.bg-f2f1f9 {
+                &::before {
+                    background: var(--splash-primary-color);
+                }
+            }
+            &.bg-f3f7f9 {
+                &::before {
+                    background: var(--splash-info-light-color);
+                }
+            }
+            &.bg-ecf3f2 {
+                &::before {
+                    background: var(--splash-success-color);
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Recent Activity
+.recent-activity-box {
+    .list {
+        li {
+            padding: {
+                left: 48px;
+                right: 20px;
+                bottom: 15px;
+            };
+            .icon {
+                top: 3px;
+                z-index: 1;
+                width: 35px;
+                height: 35px;
+                font-size: 17px;
+                line-height: 37px;
+                color: var(--splash-info-light-color);
+                border: 1px dashed var(--splash-info-light-color);
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 2px;
+                    z-index: -1;
+                    content: '';
+                    border-radius: 50%;
+                    position: absolute;
+                    background: #F3F7F9;
+                }
+            }
+            .link-btn {
+                top: 50%;
+                color: #AAA8CD;
+                transform: translateY(-50%);
+
+                &:hover {
+                    color: var(--splash-primary-color);
+                }
+            }
+            &::before {
+                top: 10px;
+                left: 17px;
+                content: '';
+                height: 100%;
+                position: absolute;
+                border-left: 1px dashed #d9e9ef;
+            }
+            &:last-child {
+                padding-bottom: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+            &:nth-child(2), &:nth-child(6) {
+                .icon {
+                    color: var(--splash-primary-color);
+                    border-color: var(--splash-primary-color);
+                }
+            }
+            &:nth-child(3), &:nth-child(7) {
+                .icon {
+                    color: var(--splash-success-color);
+                    border-color: var(--splash-success-color);
+                }
+            }
+            &:nth-child(4), &:nth-child(8) {
+                .icon {
+                    color: var(--splash-danger-color);
+                    border-color: var(--splash-danger-color);
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .stats-item {
+        .icon {
+            background: var(--splash-black-color);
+        }
+        .users-list {
+            div {
+                border-color: #45445e;
+            }
+        }
+    }
+
+    .working-schedule-box {
+        .schedule-date-list {
+            border-bottom-color: #45445e;
+        }
+    }
+
+    .recent-activity-box {
+        .list {
+            li {
+                .icon {
+                    &::before {
+                        background: var(--splash-black-color);
+                    }
+                }
+                .link-btn {
+                    color: #BCBBC7;
+    
+                    &:hover {
+                        color: var(--splash-primary-color);
+                    }
+                }
+                &::before {
+                    border-left-color: #45445e;
+                }
+            }
+        }
+    }
+
+    .to-do-list-box {
+        .to-do-list {
+            .to-do-list-item {
+                border-top-color: #45445e;
+
+                .dropdown-toggle {
+                    color: #BCBBC7;
+                    
+                    &:hover {
+                        color: var(--splash-primary-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                border-top-color: #45445e;
+                
+                .task-info {
+                    background: var(--splash-black-color);
+    
+                    .users-list {
+                        div {
+                            border-color: #45445e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    // Stats
+    .stats-item {
+        .icon {
+            width: 75px;
+            height: 75px;
+            font-size: 30px;
+
+            i {
+                margin-top: 1.5px;
+            }
+        }
+        .users-list {
+            div {
+                width: 40px;
+                height: 40px;
+                margin-right: -15px;
+            }
+        }
+        .chart {
+            margin-bottom: -25px;
+        }
+    }
+
+    // Working Schedule
+    .working-schedule-box {
+        .schedule-date-list {
+            padding-bottom: 15px;
+    
+            li {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                margin: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+        .info-list {
+            li {
+                margin-right: 10px;
+            }
+        }
+        .schedule-list {
+            .content {
+                h6 {
+                    font-size: 16px;
+                }
+                .icon {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    // To Do List
+    .to-do-list-box {
+        .to-do-list {
+            .to-do-list-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .action-buttons {
+                    button {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .task-info {
+                    margin-left: 0;
+    
+                    .users-list {
+                        margin-right: 0;
+    
+                        div {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+                &:nth-child(2), &:nth-child(7) {
+                    .task-info {
+                        margin-left: 0;
+                    }
+                }
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 0;
+                    }
+                }
+                &:nth-child(4), &:nth-child(9) {
+                    .task-info {
+                        margin-left: 0;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    // Working Schedule
+    .working-schedule-box {
+        .schedule-date-list {
+            li {
+                margin: {
+                    left: 5px;
+                    right: 5px;
+                };
+            }
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                .task-info {
+                    margin-left: 5%;
+    
+                    .users-list {
+                        margin-right: 50px;
+                    }
+                }
+                &:nth-child(2), &:nth-child(7) {
+                    .task-info {
+                        margin-left: 25%;
+                    }
+                }
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 20%;
+                    }
+                }
+                &:nth-child(4), &:nth-child(9) {
+                    .task-info {
+                        margin-left: 10%;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 25%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Working Schedule
+    .working-schedule-box {
+        .schedule-date-list {
+            li {
+                margin: {
+                    left: 23px;
+                    right: 23px;
+                };
+            }
+        }
+    }
+
+    // To Do List
+    .to-do-list-box {
+        .to-do-list {
+            .to-do-list-item {
+                padding: {
+                    top: 19px;
+                    bottom: 19px;
+                };
+            }
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .task-info {
+                    .users-list {
+                        margin-right: 50px;
+                    }
+                }
+                &:nth-child(2), &:nth-child(7) {
+                    .task-info {
+                        margin-left: 20%;
+                    }
+                }
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 40%;
+                    }
+                }
+                &:nth-child(4), &:nth-child(9) {
+                    .task-info {
+                        margin-left: 8%;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Working Schedule
+    .working-schedule-box {
+        .schedule-date-list {
+            padding: {
+                left: 120px !important;
+                right: 120px;
+            };
+            li {
+                margin: {
+                    left: 20px;
+                    right: 20px;
+                };
+            }
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                padding: {
+                    top: 17px;
+                    bottom: 17px;
+                };
+                .task-info {
+                    .users-list {
+                        margin-right: 50px;
+                    }
+                }
+                &:nth-child(2), &:nth-child(7) {
+                    .task-info {
+                        margin-left: 15%;
+                    }
+                }
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 20%;
+                    }
+                }
+                &:nth-child(4), &:nth-child(9) {
+                    .task-info {
+                        margin-left: 5%;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 25%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Recent Activity
+    .recent-activity-box {
+        .list {
+            li {
+                padding-bottom: 19px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    // Working Schedule
+    .working-schedule-box {
+        .schedule-date-list {
+            padding: {
+                left: 100px !important;
+                right: 100px;
+            };
+            li {
+                margin: {
+                    left: 20px;
+                    right: 20px;
+                };
+            }
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                .task-info {
+                    margin-left: 3%;
+    
+                    .users-list {
+                        margin-right: 30px;
+                    }
+                }
+                &:nth-child(2), &:nth-child(7) {
+                    .task-info {
+                        margin-left: 15%;
+                    }
+                }
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 20%;
+                    }
+                }
+                &:nth-child(4), &:nth-child(9) {
+                    .task-info {
+                        margin-left: 10%;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 22%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    // Stats
+    .stats-item {
+        h4 {
+            font-size: 24px;
+        }
+    }
+
+    // Active Tasks
+    .active-tasks-box {
+        .active-tasks-list {
+            .active-task-list-item {
+                padding: {
+                    top: 17px;
+                    bottom: 17px;
+                };
+                &:nth-child(3), &:nth-child(8) {
+                    .task-info {
+                        margin-left: 45%;
+                    }
+                }
+                &:nth-child(5), &:nth-child(10) {
+                    .task-info {
+                        margin-left: 40%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Recent Activity
+    .recent-activity-box {
+        .list {
+            li {
+                padding: {
+                    left: 52px;
+                    right: 45px;
+                    bottom: 18.5px;
+                };
+                .icon {
+                    top: 3px;
+                    width: 38px;
+                    height: 38px;
+                    font-size: 18px;
+                    line-height: 40px;
+    
+                    &::before {
+                        margin: 3px;
+                    }
+                }
+                &::before {
+                    top: 10px;
+                    left: 19px;
+                }
+            }
+        }
+    }
+
+    // To Do List
+    .to-do-list-box {
+        .to-do-list {
+            &.style-three {
+                .to-do-list-item {
+                    padding: {
+                        top: 14.6px;
+                        bottom: 14.6px;
+                    };
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+.kanban-title-card {
+    border-top: 4px solid var(--splash-success-color) !important;
+}
+.col-xxxl-3 {
+    &:nth-child(2) {
+        .kanban-title-card {
+            border-top-color: var(--splash-info-color) !important;
+        }
+    }
+    &:nth-child(3) {
+        .kanban-title-card {
+            border-top-color: var(--splash-primary-color) !important;
+        }
+    }
+    &:nth-child(4) {
+        .kanban-title-card {
+            border-top-color: var(--splash-warning-color) !important;
+        }
+    }
+}
+.kanban-card {
+    .card-body {
+        p {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .users-list {
+            div {
+                width: 30px;
+                height: 30px;
+                margin-right: -10px;
+                border: 2px solid var(--splash-white-color);
+                filter: drop-shadow(0px 4px 4px rgba(101, 96, 240, 0.1));
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .tags-list {
+            span {
+                margin-right: 5px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .info {
+            span {
+                margin-right: 15px;
+                padding-left: 22px;
+
+                i {
+                    left: 0;
+                    top: 50%;
+                    line-height: 1;
+                    font-size: 16px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.add-another-task-btn {
+    border: 0.5px solid #D7D7DE;
+    padding: 13px 40px 13px 25px;
+
+    i {
+        transform: translateY(-50%);
+        position: absolute;
+        margin-left: 8px;
+        font-size: 15px;
+        line-height: 1;
+        top: 50%;
+    }
+    &:hover {
+        background-color: #f8f8f8 !important;
+    }
+}
+
+// Dark Mode
+.dark {
+    .add-another-task-btn {
+        border-color: #45445e;
+
+        &:hover {
+            background-color: var(--splash-black-color) !important;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .add-another-task-btn {
+        padding: 12px 40px 12px 25px;
+    }
+
+}

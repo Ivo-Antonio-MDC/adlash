@@ -1,0 +1,557 @@
+// Stats
+.crm-stats-box {
+    .card-body {
+        padding: 30px 25px;
+
+        .icon {
+            i {
+                width: 30px;
+                height: 30px;
+                display: none;
+                line-height: 34px;
+                text-align: center;
+                border-radius: 50%;
+                background: #F8F8FB;
+            }
+        }
+        h3 {
+            font-size: 30px;
+        }
+        .chart {
+            top: 35px;
+            position: relative;
+            margin: {
+                bottom: -40px;
+                right: -15px;
+            };
+            &.style-two {
+                top: 15px;
+            }
+        }
+    }
+}
+
+// Call Stats
+.call-stats-box {
+    background-color: #CBE8F8 !important;
+    padding: 15px;
+
+    .card-body {
+        border: 2px dashed var(--splash-white-color);
+        padding: {
+            top: 35px;
+            left: 15px;
+            right: 15px;
+            bottom: 35px;
+        };
+        .icon {
+            top: 50%;
+            width: 78px;
+            right: 15px;
+            height: 78px;
+            display: none;
+            background: #F8F8FB;
+            transform: translateY(-50%);
+
+            img {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        h3 {
+            font-size: 30px;
+            margin: {
+                top: 8px;
+                bottom: 15px;
+            };
+            span {
+                font-size: 20px;
+                margin-left: 2px;
+            }
+        }
+    }
+    hr {
+        opacity: 1;
+        border-color: rgba(255, 255, 255, 0.5);
+        margin: {
+            top: 15px;
+            bottom: 15px;
+        };
+    }
+}
+
+// Most Lead
+.most-lead-box {
+    .list {
+        li {
+            border-bottom: 1px dashed #d9e9ef;
+            padding: {
+                top: 15.7px;
+                bottom: 15.7px;
+            };
+            .icon {
+                width: 46px;
+                height: 46px;
+                font-size: 20px;
+                background: #F2F1F9;
+    
+                i {
+                    top: 50%;
+                    margin-top: 1px;
+                    transform: translateY(-50%);
+                }
+                &.text-info {
+                    background: #F3F7F9;
+                }
+                &.text-success {
+                    background: #F1FAF8;
+                }
+                &.text-danger {
+                    background: #FAF7F7;
+                }
+            }
+            .progress {
+                height: 10px;
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// Campaign Contact
+.campaign-contact-box {
+    background: #8E8DA2 !important;
+    padding: 15px;
+
+    .card-body {
+        border: 2px dashed rgba(255, 255, 255, 0.2);
+        padding: 25px;
+
+        h2 {
+            font-size: 26px;
+            line-height: 1.3;
+
+            a {
+                font-size: 20px;
+            }
+        }
+        img {
+            margin-top: 28px;
+        }
+    }
+}
+
+// Revenue Target By Country
+.revenue-country-box {
+    .list {
+        margin-right: -15px;
+        
+        li {
+            border-bottom: 1px dashed #d9e9ef;
+            padding: {
+                top: 11.7px;
+                bottom: 11.7px;
+            };
+            .progress {
+                height: 6px;
+                margin-top: 3px;
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+// Campaigns
+.campaigns-box {
+    .card-body {
+        padding: 30px 20px;
+    }
+    .list {
+        margin-top: -25px;
+
+        li {
+            padding-left: 8px;
+            margin: {
+                top: 25px;
+                left: 7px;
+                right: 7px;
+            };
+            &::before {
+                background: var(--splash-primary-color);
+                position: absolute;
+                content: '';
+                width: 2px;
+                bottom: 0;
+                left: 0;
+                top: 0;
+            }
+            &.text-primary {
+                &::before {
+                    background: var(--splash-primary-color);
+                }
+            }
+            &.text-info {
+                &::before {
+                    background: var(--splash-info-color);
+                }
+            }
+            &.text-success {
+                &::before {
+                    background: var(--splash-success-color);
+                }
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+
+    .call-stats-box {
+        background-color: #3f3d59 !important;
+    
+        .card-body {
+            border-color: var(--splash-black-color);
+            
+            .icon {
+                background: var(--splash-black-color);
+            }
+        }
+        hr {
+            border-color: #45445e;
+        }
+    }
+
+    .most-lead-box {
+        .list {
+            li {
+                border-bottom-color: #45445e;
+                
+                .icon {
+                    background: var(--splash-black-color);
+        
+                    &.text-info {
+                        background: var(--splash-black-color);
+                    }
+                    &.text-success {
+                        background: var(--splash-black-color);
+                    }
+                    &.text-danger {
+                        background: var(--splash-black-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .revenue-country-box {
+        .list {
+            li {
+                border-bottom-color: #45445e;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    // Stats
+    .crm-stats-box {
+        .card-body {
+            padding: 15px;
+
+            h3 {
+                font-size: 20px;
+            }
+            .chart {
+                top: 0;
+                margin: {
+                    bottom: -30px;
+                    top: -15px;
+                    right: 0;
+                };
+                &.style-two {
+                    top: 0;
+                    margin: {
+                        top: 15px;
+                        bottom: -15px;
+                    };
+                }
+            }
+        }
+    }
+
+    // Most Lead
+    .most-lead-box {
+        .list {
+            li {
+                padding: {
+                    top: 12px;
+                    bottom: 12px;
+                };
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 18px;
+                }
+                .progress {
+                    margin: {
+                        top: 12px;
+                        bottom: 10px;
+                    };
+                }
+            }
+        }
+    }
+
+    // Campaign Contact
+    .campaign-contact-box {
+        .card-body {
+            padding: 15px;
+    
+            h2 {
+                font-size: 20px;
+    
+                a {
+                    font-size: 17px;
+                }
+            }
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    // Revenue Target By Country
+    .revenue-country-box {
+        .list {
+            margin: {
+                right: 0;
+                bottom: 15px !important;
+            };
+            li {
+                padding: {
+                    top: 12px;
+                    bottom: 12px;
+                };
+            }
+        }
+    }
+
+    // Call Stats
+    .call-stats-box {
+        .card-body {
+            padding: {
+                top: 15px;
+                bottom: 15px;
+            };
+            .icon {
+                width: 60px;
+                height: 60px;
+                display: block;
+            }
+            h3 {
+                font-size: 20px;
+                margin: {
+                    top: 5px;
+                    bottom: 10px;
+                };
+                span {
+                    font-size: 16px;
+                    margin-left: 0;
+                }
+            }
+        }
+        hr {
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            };
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    // Stats
+    .crm-stats-box {
+        .card-body {
+            padding: 25px;
+
+            .icon {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    display: none;
+                    line-height: 34px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #F8F8FB;
+                }
+            }
+            h3 {
+                font-size: 25px;
+            }
+            .chart {
+                top: 0;
+                margin: {
+                    bottom: -30px;
+                    right: 0;
+                };
+                &.style-two {
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    // Revenue Target By Country
+    .revenue-country-box {
+        .list {
+            margin-right: 0;
+            margin: {
+                right: 0;
+                bottom: 25px !important;
+            };
+            li {
+                padding: {
+                    top: 12px;
+                    bottom: 12px;
+                };
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    // Campaign Contact
+    .campaign-contact-box {
+        .card-body {
+            h2 {
+                font-size: 25px;
+            }
+            img {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    // Revenue Target By Country
+    .revenue-country-box {
+        .list {
+            li {
+                padding: {
+                    top: 11.3px;
+                    bottom: 11.3px;
+                };
+            }
+        }
+    }
+
+    // Call Stats
+    .call-stats-box {
+        .card-body {
+            .icon {
+                display: block;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    // Stats
+    .crm-stats-box {
+        .card-body {
+            padding: 40px 30px;
+
+            .icon {
+                i {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // Call Stats
+    .call-stats-box {
+        .card-body {
+            .icon {
+                display: block;
+            }
+        }
+    }
+
+    // Most Lead
+    .most-lead-box {
+        .list {
+            li {
+                padding: {
+                    top: 20px;
+                    bottom: 20px;
+                };
+            }
+        }
+    }
+
+    // Revenue Target By Country
+    .revenue-country-box {
+        .list {
+            li {
+                padding: {
+                    top: 15.1px;
+                    bottom: 15.1px;
+                };
+            }
+        }
+    }
+
+    // Campaigns
+    .campaigns-box {
+        .card-body {
+            padding: 30px;
+        }
+        .list {
+            li {
+                padding-left: 10px;
+                margin: {
+                    left: 15px;
+                    right: 15px;
+                };
+            }
+        }
+    }
+
+    // Campaign Contact
+    .campaign-contact-box {
+        .card-body {
+            img {
+                margin-top: 24px;
+            }
+        }
+    }
+
+}

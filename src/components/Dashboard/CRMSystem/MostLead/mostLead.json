@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "iconColor": "text-primary",
+    "icon": "flaticon-share",
+    "title": "Social Media",
+    "class": "",
+    "progress": "52",
+    "count": "12,302"
+  },
+  {
+    "id": 2,
+    "iconColor": "text-info",
+    "icon": "flaticon-envelope",
+    "title": "Email",
+    "class": "bg-info",
+    "progress": "75",
+    "count": "15,210"
+  },
+  {
+    "id": 3,
+    "iconColor": "text-success",
+    "icon": "flaticon-phone-call",
+    "title": "Call",
+    "class": "bg-success",
+    "progress": "62",
+    "count": "13,312"
+  },
+  {
+    "id": 4,
+    "iconColor": "text-danger",
+    "icon": "flaticon-copy",
+    "title": "Others",
+    "class": "bg-danger",
+    "progress": "17",
+    "count": "1,421"
+  }
+]

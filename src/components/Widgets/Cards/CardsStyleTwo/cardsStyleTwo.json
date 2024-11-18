@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "products/product-mini1.jpg",
+    "title": "Adlash Dashboard Design",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 2,
+    "image": "products/product-mini2.jpg",
+    "title": "iPad Pro 14 - With Pencil",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 3,
+    "image": "products/product-mini3.jpg",
+    "title": "Clay Camera For Showcase",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  },
+  {
+    "id": 4,
+    "image": "products/product-mini4.jpg",
+    "title": "Dashboard Design Review",
+    "shortDesc": "Lorem Ipsum is simply dummy text of the printer took a galley of type and scrambled."
+  }
+]

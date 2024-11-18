@@ -1,0 +1,47 @@
+.maintenance-card {
+    .card-body {
+        padding: 70px;
+
+        h1 {
+            font-size: 20px;
+            margin: {
+                top: 40px;
+                bottom: 12px;
+            };
+        }
+        p {
+            max-width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .maintenance-card {
+        .card-body {
+            padding: 25px 15px;
+    
+            h1 {
+                font-size: 16px;
+                margin: {
+                    top: 25px;
+                    bottom: 8px;
+                };
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .maintenance-card {
+        .card-body {
+            padding: 50px;
+        }
+    }
+
+}

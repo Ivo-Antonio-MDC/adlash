@@ -1,0 +1,33 @@
+.search-result-card {
+    .card-body {
+        .list {
+            li {
+                border-top: 1px dashed #d9e9ef;
+                padding: {
+                    top: 16px;
+                    bottom: 16px;
+                };
+                &:last-child {
+                    border-bottom: 1px dashed #d9e9ef;
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .search-result-card {
+        .card-body {
+            .list {
+                li {
+                    border-top-color: #45445e;
+                    
+                    &:last-child {
+                        border-bottom-color: #45445e;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,328 @@
+.checkout-box {
+    .card-body {
+        padding: 0;
+
+        .nav {
+            &.nav-tabs {
+                padding: 5px;
+                box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+
+                .nav-item {
+                    flex: 1 0 0%;
+
+                    .nav-link {
+                        color: var(--splash-muted-color);
+                        transition: var(--transition);
+                        padding: 18px 0 18px 33px;
+                        margin-bottom: 0;
+
+                        i {
+                            top: 50%;
+                            line-height: 1;
+                            font-size: 22px;
+                            margin-left: -33px;
+                            position: absolute;
+                            transform: translateY(-50%);
+                        }
+                        &:hover, &.active {
+                            background-color: var(--splash-primary-color);
+                            color: var(--splash-white-color);
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .accordion {
+                .accordion-item {
+                    border: 1px solid #F2F1F9;
+                    margin-bottom: 25px;
+                    padding: 25px;
+
+                    .accordion-button {
+                        padding: 0 0 0 45px;
+
+                        img {
+                            box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                        .dot {
+                            left: 0;
+                            top: 50%;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            position: absolute;
+                            transform: translateY(-50%);
+                            border: 1px solid var(--splash-primary-color);
+
+                            &::before {
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                content: '';
+                                margin: 4px;
+                                position: absolute;
+                                border-radius: 50%;
+                                transition: var(--transition);
+                                background: var(--splash-primary-color);
+                            }
+                        }
+                        &::after {
+                            display: none;
+                        }
+                        &.collapsed {
+                            .dot {
+                                &::before {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+                    }
+                    .accordion-collapse {
+                        .accordion-body {
+                            margin-top: 25px;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .box {
+                background: #F2F1F9;
+
+                .inner-box {
+                    box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+                    max-width: 530px;
+
+                    ul {
+                        li {
+                            margin-bottom: 12px;
+                            padding-left: 95px;
+            
+                            span {
+                                top: 0;
+                                left: 0;
+                                position: absolute;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .payment-method {
+                    img {
+                        box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .checkout-box {
+        .card-body {
+            .nav {
+                &.nav-tabs {
+                    box-shadow: unset;
+                    border-bottom: 1px dashed #45445e !important;
+    
+                    .nav-item {
+                        .nav-link {
+                            color: #BCBBC7;
+    
+                            &:hover, &.active {
+                                color: var(--splash-white-color);
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .accordion {
+                    .accordion-item {
+                        border-color: #45445e;
+    
+                        .accordion-button {
+                            &.bg-white {
+                                background-color: #2b2a3f !important;
+                            }
+                        }
+                    }
+                }
+                .box {
+                    background: var(--splash-black-color);
+    
+                    .inner-box {
+                        box-shadow: unset;
+                    }
+                    .payment-method {
+                        img {
+                            box-shadow: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .checkout-box {
+        .card-body {
+            .nav {
+                &.nav-tabs {
+                    .nav-item {
+                        .nav-link {
+                            padding: 15px 10px;
+    
+                            i {
+                                top: 0;
+                                display: block;
+                                font-size: 20px;
+                                position: relative;
+                                transform: translateY(0);
+                                margin: {
+                                    left: 0;
+                                    bottom: 2px;
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .accordion {
+                    .accordion-item {
+                        margin-bottom: 15px;
+                        padding: 15px;
+    
+                        .accordion-button {
+                            padding: 0 0 0 20px;
+    
+                            img {
+                                margin-right: 0;
+                                width: 28px;
+                            }
+                            .dot {
+                                width: 15px;
+                                height: 15px;
+    
+                                &::before {
+                                    margin: 3px;
+                                }
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+                .box {
+                    .inner-box {
+                        max-width: 100%;
+    
+                        ul {
+                            li {
+                                margin-bottom: 12px;
+                                padding-left: 0;
+                
+                                span {
+                                    display: block;
+                                    margin-bottom: 3px;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .checkout-box {
+        .card-body {
+            .tab-content {
+                .accordion {
+                    .accordion-item {
+                        padding: 20px;
+                        .accordion-collapse {
+                            .accordion-body {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .box {
+                    .inner-box {
+                        ul {
+                            li {
+                                margin-bottom: 12px;
+                                padding-left: 0;
+                
+                                span {
+                                    display: block;
+                                    margin-bottom: 3px;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .checkout-box {
+        .card-body {
+            .tab-content {
+                .accordion {
+                    .accordion-item {
+                        margin-bottom: 20px;
+                        padding: 15px 20px;
+    
+                        .accordion-button {
+                            padding: 0 0 0 35px;
+    
+                            .dot {
+                                width: 25px;
+                                height: 25px;
+    
+                                &::before {
+                                    margin: 3px;
+                                }
+                            }
+                        }
+                        .accordion-collapse {
+                            .accordion-body {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

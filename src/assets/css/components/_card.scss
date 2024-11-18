@@ -1,0 +1,291 @@
+.card {
+    &.box-shadow {
+        box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+    }
+    .card-head {
+        &.box-shadow {
+            box-shadow: 0px 4px 34px rgba(101, 96, 240, 0.1);
+        }
+        .search-box {
+            width: 280px;
+
+            .form-control {
+                background: #F5F4FA;
+                padding: {
+                    top: 14px;
+                    bottom: 14px;
+                };
+            }
+            button {
+                top: 50%;
+                right: 20px;
+                line-height: 1;
+                margin-top: 1px;
+                font-size: 17px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+        }
+        .dot-btn {
+            margin-right: -7px;
+            color: #A09FB0;
+            font-size: 20px;
+            
+            &:hover {
+                color: var(--splash-primary-color);
+            }
+        }
+        .select-calendar {
+            width: 155px;
+            
+            .icon {
+                top: 50%;
+                left: 15px;
+                color: #A09FB0;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+            .form-control {
+                cursor: pointer;
+                padding: 10.9px 15px 10.9px 38px;
+                border-color: rgba(101, 96, 240, 0.3);
+            }
+        }
+        .project-select {
+            &.form-select {
+                width: 190px;
+                padding: {
+                    top: 15px;
+                    bottom: 15px;
+                };
+                background: {
+                    size: 20px 12px;
+                    position: right 18px center;
+                };
+            }
+        }
+        .reviews-select {
+            background: #F5F4FA;
+            padding: 14px 15px;
+            
+            span {
+                padding-right: 15px;
+
+                &::before {
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    content: '';
+                    height: 17px;
+                    position: absolute;
+                    background: #DCDCE6;
+                }
+            }
+            .form-select {
+                padding: 0 0 0 15px;
+                width: 95px;
+                background: {
+                    size: 18px 12px;
+                    position: right 0 center;
+                };
+            }
+        }
+        &.border-bottom {
+            border-bottom: 1px dashed #d9e9ef !important;
+        }
+    }
+    .card-body {
+        .card-select {
+            color: var(--splash-secondary-color);
+            border: 1px solid #d6d4ec;
+            border-radius: 4px;
+        
+            .form-select {
+                background: {
+                    position: right 0 center;
+                    size: 16px 12px;
+                };
+            }
+        }
+    }
+}
+
+// Dark Mode
+.dark {
+    .card {
+        --bs-card-bg: #34334a;
+        border-color: #45445e;
+        color: var(--splash-white-color);
+
+        &.box-shadow {
+            box-shadow: unset;
+        }
+        .card-head {
+            &.box-shadow {
+                box-shadow: unset;
+                border-bottom: 1px dashed #45445e;
+            }
+            .search-box {
+                .form-control {
+                    background-color: var(--splash-black-color);
+                }
+            }
+            .dot-btn {
+                color: #BCBBC7;
+                
+                &:hover {
+                    color: var(--splash-primary-color);
+                }
+            }
+            .select-calendar {
+                .icon {
+                    color: #BCBBC7;
+                }
+            }
+            .reviews-select {
+                background: var(--splash-black-color);
+                
+                span {
+                    &::before {
+                        background: #45445e;
+                    }
+                }
+            }
+            &.border-bottom {
+                border-bottom-color: #45445e !important;
+            }
+        }
+        .card-body {
+            .card-select {
+                color: #BCBBC7 !important;
+                border-color: #45445e;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .card {
+        .card-head {
+            .search-box {
+                width: 100%;
+    
+                .form-control {
+                    padding: {
+                        top: 13px;
+                        bottom: 13px;
+                    };
+                }
+                button {
+                    right: 15px;
+                    font-size: 16px;
+                }
+            }
+            .select-calendar {
+                width: auto;
+                
+                .icon {
+                    margin-top: 0.5px;
+                }
+                .form-control {
+                    padding: 12px 15px 12px 38px;
+                }
+            }
+            .project-select {
+                &.form-select {
+                    width: 180px;
+                    padding: {
+                        top: 14px;
+                        bottom: 14px;
+                    };
+                }
+            }
+            .reviews-select {
+                padding: 13px 15px;
+                
+                .form-select {
+                    width: 100%;
+                }
+            }
+        }
+        .card-body {
+            .card-select {
+                .form-select {
+                    background: {
+                        position: right 0 center;
+                        size: 16px 12px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .card {
+        .card-head {
+            .project-select {
+                &.form-select {
+                    padding: {
+                        top: 15px;
+                        bottom: 15px;
+                    };
+                }
+            }
+            .reviews-select {
+                padding: 13.5px 15px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .card {
+        .card-head {
+            .search-box {
+                width: 275px;
+            }
+            .select-calendar {
+                width: 165px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .card {
+        .card-head {
+            .search-box {
+                width: 250px;
+            }
+            .select-calendar {
+                width: 170px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .card {
+        .card-head {
+            .search-box {
+                width: 340px;
+            }
+            .reviews-select {
+                .form-select {
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+}
